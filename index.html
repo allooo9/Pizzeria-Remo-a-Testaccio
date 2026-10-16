@@ -70,9 +70,8 @@
     <nav id="navbar" class="sticky top-0 z-50 bg-pizzaDark/95 backdrop-blur-md text-white border-b border-pizzaRed/30 transition-all duration-300 shadow-lg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
-                <!-- Top-left logo position -->
+                <!-- Top-left logo position (Removed red R as requested) -->
                 <div class="flex items-center space-x-3">
-                    <span class="bg-pizzaRed text-white p-2.5 rounded-xl font-serif font-black text-xl shadow-lg shadow-pizzaRed/40">R</span>
                     <div>
                         <a href="#" class="font-serif font-bold text-xl md:text-2xl tracking-wider text-white hover:text-pizzaYellow transition">PIZZERIA REMO</a>
                         <p class="text-xs text-gray-400" data-i18n="nav_subtitle">Dal cuore di Testaccio, Roma</p>
@@ -190,7 +189,6 @@
             <div class="relative">
                 <div class="absolute -inset-4 bg-gradient-to-r from-pizzaRed to-pizzaYellow rounded-3xl opacity-20 blur-xl"></div>
                 <div class="relative bg-white p-4 rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
-                    <!-- Updated image as requested, cropped nicely -->
                     <div class="overflow-hidden rounded-2xl w-full h-[420px]">
                         <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/ad/10/38/caption.jpg?w=1100&h=-1&s=1" alt="Pizzeria Remo Atmosfera" class="w-full h-full object-cover object-center scale-105 hover:scale-100 transition duration-500 shadow-inner">
                     </div>
@@ -227,7 +225,7 @@
                 <button onclick="filterMenu('bevande')" class="menu-tab bg-stone-800 hover:bg-stone-700 text-gray-300 px-6 py-2.5 rounded-full font-bold text-sm transition" data-i18n="tab_drinks">Bevande</button>
             </div>
 
-            <!-- Menu Grid Container - Fully expanded boxes without internal scrollbars -->
+            <!-- Menu Grid Container -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
 
                 <!-- PIZZE BIANCHE -->
@@ -422,15 +420,15 @@
                     </ul>
                 </div>
 
-                <!-- CONTORNI & DOLCI -->
+                <!-- CONTORNI (Separated) -->
                 <div class="menu-card bg-stone-900/90 border border-stone-800 rounded-2xl p-6 shadow-xl" data-category="contorni">
                     <div class="flex items-center space-x-3 mb-6 border-b border-stone-800 pb-4">
                         <div class="bg-emerald-600 text-white p-2.5 rounded-xl font-bold">
                             <i class="fa-solid fa-carrot"></i>
                         </div>
                         <div>
-                            <h3 class="font-serif font-bold text-xl text-emerald-400" data-i18n="cat_sides_desserts">Contorni & Dolci</h3>
-                            <p class="text-xs text-gray-400" data-i18n="cat_sides_desserts_sub">Verdure fresche e dessert</p>
+                            <h3 class="font-serif font-bold text-xl text-emerald-400" data-i18n="cat_sides">Contorni</h3>
+                            <p class="text-xs text-gray-400" data-i18n="cat_sides_sub">Verdure fresche di stagione</p>
                         </div>
                     </div>
                     <ul class="space-y-4">
@@ -442,10 +440,25 @@
                             <span class="font-medium text-gray-200">Verdure Cotte <span class="text-xs text-gray-400 font-normal" data-i18n="veg_details">(broccoli, cicoria, broccoletti)</span></span>
                             <span class="font-bold text-pizzaYellow font-serif">6,00 €</span>
                         </li>
-                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
+                        <li class="flex justify-between items-baseline pb-1">
                             <span class="font-medium text-gray-200">Puntarelle</span>
                             <span class="font-bold text-pizzaYellow font-serif">5,00 €</span>
                         </li>
+                    </ul>
+                </div>
+
+                <!-- DOLCI (Separated) -->
+                <div class="menu-card bg-stone-900/90 border border-stone-800 rounded-2xl p-6 shadow-xl" data-category="contorni">
+                    <div class="flex items-center space-x-3 mb-6 border-b border-stone-800 pb-4">
+                        <div class="bg-rose-600 text-white p-2.5 rounded-xl font-bold">
+                            <i class="fa-solid fa-cake-candles"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-serif font-bold text-xl text-rose-400" data-i18n="cat_desserts">Dolci</h3>
+                            <p class="text-xs text-gray-400" data-i18n="cat_desserts_sub">Fine pasto artigianale</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-4">
                         <li class="flex justify-between items-baseline pb-1">
                             <span class="font-medium text-gray-200" data-i18n="dessert_item">Dolci (da richiedere disponibilità del giorno)</span>
                             <span class="font-bold text-pizzaYellow font-serif">4,50 €</span>
@@ -510,7 +523,7 @@
 
             </div>
             
-            <!-- Delivery Info Box with requested placement -->
+            <!-- Delivery Info Box -->
             <div class="mt-12 text-center text-sm text-gray-300 bg-stone-900 p-6 rounded-2xl border border-stone-800 max-w-4xl mx-auto space-y-3 shadow-lg">
                 <p><i class="fa-solid fa-circle-info text-pizzaYellow mr-2"></i> <span data-i18n="menu_extra">* Ad ogni ingrediente aggiunto +1,00 €</span></p>
                 <p><i class="fa-solid fa-motorcycle text-pizzaYellow mr-2"></i> <strong data-i18n="delivery_zones_title">Zone in cui effettuiamo consegne:</strong> Testaccio, San Saba, Aventino, Trastevere, Marconi, Garbatella, Ostiense, Monteverde, Portuense, Magliana, Montagnola, EUR.</p>
@@ -528,7 +541,7 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- Review 1 (piatti.menu without avatar & badges) -->
+            <!-- Review 1 -->
             <div class="bg-white p-8 rounded-3xl shadow-xl border border-orange-100 flex flex-col justify-between relative overflow-hidden group hover:shadow-2xl transition">
                 <div class="absolute top-0 right-0 bg-red-50 text-pizzaRed px-4 py-2 rounded-bl-2xl font-bold text-xs uppercase tracking-wider">
                     piatti.menu
@@ -551,7 +564,7 @@
                 </div>
             </div>
 
-            <!-- Review 2 (tripadvisor without avatar & badges) -->
+            <!-- Review 2 -->
             <div class="bg-white p-8 rounded-3xl shadow-xl border border-orange-100 flex flex-col justify-between relative overflow-hidden group hover:shadow-2xl transition">
                 <div class="absolute top-0 right-0 bg-emerald-50 text-emerald-700 px-4 py-2 rounded-bl-2xl font-bold text-xs uppercase tracking-wider">
                     tripadvisor
@@ -616,7 +629,7 @@
                         <div>
                             <h4 class="font-serif font-bold text-lg text-pizzaDark" data-i18n="hours_title">Orari di Apertura</h4>
                             <ul class="text-sm text-gray-600 space-y-1.5 mt-1">
-                                <li class="flex justify-between"><span class="font-medium text-gray-800" data-i18n="hours_days">Lunedì - Sabato:</span> <span class="text-pizzaRed font-semibold">19:00 - 01:00</span></li>
+                                <li class="flex justify-between"><span class="font-medium text-gray-800" data-i18n="hours_days">Lunedì - Sabato:</span> <span class="text-pizzaRed font-semibold"> 19:00 - 01:00</span></li>
                                 <li class="flex justify-between"><span class="font-medium text-gray-800" data-i18n="hours_sun">Domenica:</span> <span class="text-red-600 font-semibold" data-i18n="closed">Chiuso</span></li>
                             </ul>
                         </div>
@@ -646,7 +659,6 @@
     <footer class="bg-pizzaDark text-gray-400 py-12 border-t border-stone-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
             <div class="flex items-center space-x-3">
-                <span class="bg-pizzaRed text-white p-2 rounded-xl font-serif font-black text-lg">R</span>
                 <div>
                     <span class="font-serif font-bold text-white text-lg">PIZZERIA REMO</span>
                     <p class="text-xs">Piazza S. Maria Liberatrice 44, Testaccio (Roma)</p>
@@ -654,7 +666,6 @@
             </div>
             <div class="text-sm text-center md:text-right">
                 <p>&copy; 2026 Pizzeria Remo a Testaccio. <span data-i18n="rights">Tutti i diritti riservati.</span></p>
-                <p class="text-xs text-gray-500 mt-1" data-i18n="footer_sub">Sito storico non ufficiale realizzato con passione per i veri amanti della pizza romana.</p>
             </div>
         </div>
     </footer>
@@ -702,8 +713,10 @@
                 cat_fried_sub: "Supplì, baccalà e fritti romani",
                 cat_crostini: "Crostini*",
                 cat_crostini_sub: "Base croccante al forno",
-                cat_sides_desserts: "Contorni & Dolci",
-                cat_sides_desserts_sub: "Verdure fresche e dessert",
+                cat_sides: "Contorni",
+                cat_sides_sub: "Verdure fresche di stagione",
+                cat_desserts: "Dolci",
+                cat_desserts_sub: "Fine pasto artigianale",
                 veg_details: "(broccoli, cicoria, broccoletti)",
                 dessert_item: "Dolci (da richiedere disponibilità del giorno)",
                 cat_drinks: "Bevande",
@@ -727,8 +740,7 @@
                 hours_days: "Lunedì - Sabato:",
                 hours_sun: "Domenica:",
                 closed: "Chiuso",
-                rights: "Tutti i diritti riservati.",
-                footer_sub: "Sito storico non ufficiale realizzato con passione per i veri amanti della pizza romana."
+                rights: "Tutti i diritti riservati."
             },
             en: {
                 page_title: "Pizzeria Remo in Testaccio | The True Roman Pizza",
@@ -769,8 +781,10 @@
                 cat_fried_sub: "Supplì, cod and Roman fried bites",
                 cat_crostini: "Crostini*",
                 cat_crostini_sub: "Crispy baked base",
-                cat_sides_desserts: "Sides & Desserts",
-                cat_sides_desserts_sub: "Fresh vegetables and desserts",
+                cat_sides: "Sides",
+                cat_sides_sub: "Fresh seasonal vegetables",
+                cat_desserts: "Desserts",
+                cat_desserts_sub: "Artisanal desserts",
                 veg_details: "(broccoli, chicory, greens)",
                 dessert_item: "Desserts (ask for daily availability)",
                 cat_drinks: "Drinks",
@@ -794,8 +808,7 @@
                 hours_days: "Monday - Saturday:",
                 hours_sun: "Sunday:",
                 closed: "Closed",
-                rights: "All rights reserved.",
-                footer_sub: "Unofficial historic website made with passion for true Roman pizza lovers."
+                rights: "All rights reserved."
             }
         };
 
