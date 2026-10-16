@@ -163,7 +163,7 @@
                     Pizzeria Remo è molto più di una semplice pizzeria: è un punto di riferimento storico per romani e visitatori. Famosa per la proverbiale fila fuori dal locale — testimonianza inequivocabile della bontà ineguagliabile del prodotto — offre un'atmosfera autentica, chiassosa e calorosa.
                 </p>
                 <p class="text-gray-700 text-lg leading-relaxed" data-i18n="intro_p2">
-                    Qui la pizza è rigorosamente <strong>bassa, tonda e croccante</strong> (la classica "scrocchiarella"), accompagnata da fritti leggendari come i supplì al telefono e i filetti di baccalà. Servizio rapido, prezzi onesti e un'ospitalità che sa di famiglia.
+                    Qui la pizza è rigorosamente <strong>bassa, tonda e gustosa</strong>, accompagnata da fritti storici romani come i supplì al telefono e i filetti di baccalà. Servizio rapido, prezzi onesti e un'ospitalità che sa di famiglia.
                 </p>
                 <div class="grid grid-cols-2 gap-4 pt-2">
                     <div class="bg-white p-5 rounded-2xl shadow-sm border border-orange-100 flex items-center space-x-4">
@@ -220,7 +220,7 @@
             <div class="flex flex-wrap justify-center gap-2 mb-12">
                 <button onclick="filterMenu('all')" class="menu-tab active-tab bg-pizzaRed text-white px-6 py-2.5 rounded-full font-bold text-sm shadow-md transition" data-i18n="tab_all">Tutti</button>
                 <button onclick="filterMenu('pizze')" class="menu-tab bg-stone-800 hover:bg-stone-700 text-gray-300 px-6 py-2.5 rounded-full font-bold text-sm transition" data-i18n="tab_pizzas">Pizze & Crostini</button>
-                <button onclick="filterMenu('fritti')" class="menu-tab bg-stone-800 hover:bg-stone-700 text-gray-300 px-6 py-2.5 rounded-full font-bold text-sm transition" data-i18n="tab_fried">Fritti & Sfizi</button>
+                <button onclick="filterMenu('fritti')" class="menu-tab bg-stone-800 hover:bg-stone-700 text-gray-300 px-6 py-2.5 rounded-full font-bold text-sm transition" data-i18n="tab_fried">Crostini & Fritti</button>
                 <button onclick="filterMenu('contorni')" class="menu-tab bg-stone-800 hover:bg-stone-700 text-gray-300 px-6 py-2.5 rounded-full font-bold text-sm transition" data-i18n="tab_sides">Contorni & Dolci</button>
                 <button onclick="filterMenu('bevande')" class="menu-tab bg-stone-800 hover:bg-stone-700 text-gray-300 px-6 py-2.5 rounded-full font-bold text-sm transition" data-i18n="tab_drinks">Bevande</button>
             </div>
@@ -350,6 +350,37 @@
                     </ul>
                 </div>
 
+                <!-- CROSTINI SPECIALI (Placed before Fritti) -->
+                <div class="menu-card bg-stone-900/90 border border-stone-800 rounded-2xl p-6 shadow-xl" data-category="fritti">
+                    <div class="flex items-center space-x-3 mb-6 border-b border-stone-800 pb-4">
+                        <div class="bg-pizzaYellow text-pizzaDark p-2.5 rounded-xl font-bold">
+                            <i class="fa-solid fa-bread-slice"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-serif font-bold text-xl text-pizzaYellow" data-i18n="cat_crostini">Crostini*</h3>
+                            <p class="text-xs text-gray-400" data-i18n="cat_crostini_sub">Base croccante al forno</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
+                            <span class="font-medium text-gray-200">Alici</span>
+                            <span class="font-bold text-pizzaYellow font-serif">8,50 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
+                            <span class="font-medium text-gray-200">Prosciutto</span>
+                            <span class="font-bold text-pizzaYellow font-serif">7,50 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
+                            <span class="font-medium text-gray-200">Capriccioso</span>
+                            <span class="font-bold text-pizzaYellow font-serif">8,00 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline pb-1">
+                            <span class="font-medium text-gray-200">Salmone</span>
+                            <span class="font-bold text-pizzaYellow font-serif">8,50 €</span>
+                        </li>
+                    </ul>
+                </div>
+
                 <!-- FRITTI -->
                 <div class="menu-card bg-stone-900/90 border border-stone-800 rounded-2xl p-6 shadow-xl" data-category="fritti">
                     <div class="flex items-center space-x-3 mb-6 border-b border-stone-800 pb-4">
@@ -385,37 +416,6 @@
                         <li class="flex justify-between items-baseline pb-1">
                             <span class="font-medium text-gray-200">Patate Fritte</span>
                             <span class="font-bold text-pizzaYellow font-serif">4,00 €</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- CROSTINI SPECIALI -->
-                <div class="menu-card bg-stone-900/90 border border-stone-800 rounded-2xl p-6 shadow-xl" data-category="pizze">
-                    <div class="flex items-center space-x-3 mb-6 border-b border-stone-800 pb-4">
-                        <div class="bg-pizzaYellow text-pizzaDark p-2.5 rounded-xl font-bold">
-                            <i class="fa-solid fa-bread-slice"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-serif font-bold text-xl text-pizzaYellow" data-i18n="cat_crostini">Crostini*</h3>
-                            <p class="text-xs text-gray-400" data-i18n="cat_crostini_sub">Base croccante al forno</p>
-                        </div>
-                    </div>
-                    <ul class="space-y-4">
-                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
-                            <span class="font-medium text-gray-200">Alici</span>
-                            <span class="font-bold text-pizzaYellow font-serif">8,50 €</span>
-                        </li>
-                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
-                            <span class="font-medium text-gray-200">Prosciutto</span>
-                            <span class="font-bold text-pizzaYellow font-serif">7,50 €</span>
-                        </li>
-                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
-                            <span class="font-medium text-gray-200">Capriccioso</span>
-                            <span class="font-bold text-pizzaYellow font-serif">8,00 €</span>
-                        </li>
-                        <li class="flex justify-between items-baseline pb-1">
-                            <span class="font-medium text-gray-200">Salmone</span>
-                            <span class="font-bold text-pizzaYellow font-serif">8,50 €</span>
                         </li>
                     </ul>
                 </div>
@@ -688,7 +688,7 @@
                 intro_badge: "L'Istituzione Romana",
                 intro_title: "Un tempio della romanità verace nel cuore di Testaccio",
                 intro_p1: "Pizzeria Remo è molto più di una semplice pizzeria: è un punto di riferimento storico per romani e visitatori. Famosa per la proverbiale fila fuori dal locale — testimonianza inequivocabile della bontà ineguagliabile del prodotto — offre un'atmosfera autentica, chiassosa e calorosa.",
-                intro_p2: "Qui la pizza è rigorosamente <strong>bassa, tonda e croccante</strong> (la classica \"scrocchiarella\"), accompagnata da fritti leggendari come i supplì al telefono e i filetti di baccalà. Servizio rapido, prezzi onesti e un'ospitalità che sa di famiglia.",
+                intro_p2: "Qui la pizza è rigorosamente <strong>bassa, tonda e gustosa</strong>, accompagnata da fritti storici romani come i supplì al telefono e i filetti di baccalà. Servizio rapido, prezzi onesti e un'ospitalità che sa di famiglia.",
                 feature_1_title: "Pizza Bassa",
                 feature_1_desc: "Stile romano doc",
                 feature_2_title: "Forno a Legna",
@@ -699,7 +699,7 @@
                 menu_subtitle: "Tutti i sapori della tradizione romana preparati con ingredienti genuini.",
                 tab_all: "Tutti",
                 tab_pizzas: "Pizze & Crostini",
-                tab_fried: "Fritti & Sfizi",
+                tab_fried: "Crostini & Fritti",
                 tab_sides: "Contorni & Dolci",
                 tab_drinks: "Bevande",
                 cat_white_pizzas: "Pizze Bianche*",
@@ -755,7 +755,7 @@
                 intro_badge: "The Roman Institution",
                 intro_title: "A temple of true Roman spirit in the heart of Testaccio",
                 intro_p1: "Pizzeria Remo is much more than a simple pizzeria: it is a historic landmark for Romans and visitors alike. Famous for the proverbial line outside — unmistakable proof of the unmatched quality of the product — it offers an authentic, lively, and warm atmosphere.",
-                intro_p2: "Here the pizza is strictly <strong>thin, round, and crispy</strong> (the classic \"scrocchiarella\"), accompanied by legendary fried snacks such as supplì al telefono and cod fillets. Quick service, honest prices, and family-like hospitality.",
+                intro_p2: "Here the pizza is strictly <strong>thin, round, and savory</strong>, accompanied by historic Roman fried foods such as supplì al telefono and cod fillets. Quick service, honest prices, and family-like hospitality.",
                 feature_1_title: "Thin Pizza",
                 feature_1_desc: "Classic Roman style",
                 feature_2_title: "Wood Oven",
@@ -766,7 +766,7 @@
                 menu_subtitle: "All the flavors of Roman tradition prepared with genuine ingredients.",
                 tab_all: "All",
                 tab_pizzas: "Pizzas & Crostini",
-                tab_fried: "Fried & Snacks",
+                tab_fried: "Crostini & Fried",
                 tab_sides: "Sides & Desserts",
                 tab_drinks: "Drinks",
                 cat_white_pizzas: "White Pizzas*",
