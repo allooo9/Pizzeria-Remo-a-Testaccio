@@ -70,7 +70,7 @@
     <nav id="navbar" class="sticky top-0 z-50 bg-pizzaDark/95 backdrop-blur-md text-white border-b border-pizzaRed/30 transition-all duration-300 shadow-lg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
-                <!-- Top-left logo position (Removed red R as requested) -->
+                <!-- Top-left logo position without red R -->
                 <div class="flex items-center space-x-3">
                     <div>
                         <a href="#" class="font-serif font-bold text-xl md:text-2xl tracking-wider text-white hover:text-pizzaYellow transition">PIZZERIA REMO</a>
@@ -447,7 +447,7 @@
                     </ul>
                 </div>
 
-                <!-- DOLCI (Separated) -->
+                <!-- DOLCI (Separated & with 4,50€ fixed on one line) -->
                 <div class="menu-card bg-stone-900/90 border border-stone-800 rounded-2xl p-6 shadow-xl" data-category="contorni">
                     <div class="flex items-center space-x-3 mb-6 border-b border-stone-800 pb-4">
                         <div class="bg-rose-600 text-white p-2.5 rounded-xl font-bold">
@@ -461,7 +461,7 @@
                     <ul class="space-y-4">
                         <li class="flex justify-between items-baseline pb-1">
                             <span class="font-medium text-gray-200" data-i18n="dessert_item">Dolci (da richiedere disponibilità del giorno)</span>
-                            <span class="font-bold text-pizzaYellow font-serif">4,50 €</span>
+                            <span class="font-bold text-pizzaYellow font-serif whitespace-nowrap">4,50€</span>
                         </li>
                     </ul>
                 </div>
@@ -523,7 +523,7 @@
 
             </div>
             
-            <!-- Delivery Info Box -->
+            <!-- Delivery Info Box with minimum order note at the bottom -->
             <div class="mt-12 text-center text-sm text-gray-300 bg-stone-900 p-6 rounded-2xl border border-stone-800 max-w-4xl mx-auto space-y-3 shadow-lg">
                 <p><i class="fa-solid fa-circle-info text-pizzaYellow mr-2"></i> <span data-i18n="menu_extra">* Ad ogni ingrediente aggiunto +1,00 €</span></p>
                 <p><i class="fa-solid fa-motorcycle text-pizzaYellow mr-2"></i> <strong data-i18n="delivery_zones_title">Zone in cui effettuiamo consegne:</strong> Testaccio, San Saba, Aventino, Trastevere, Marconi, Garbatella, Ostiense, Monteverde, Portuense, Magliana, Montagnola, EUR.</p>
@@ -560,7 +560,6 @@
                 </div>
                 <div class="pt-6 mt-6 border-t border-gray-100 flex items-center justify-between">
                     <span class="font-bold text-pizzaDark font-serif text-sm">piatti.menu</span>
-                    <span class="text-xs text-pizzaRed font-semibold" data-i18n="verified_review">Recensione Verificata</span>
                 </div>
             </div>
 
@@ -583,7 +582,6 @@
                 </div>
                 <div class="pt-6 mt-6 border-t border-gray-100 flex items-center justify-between">
                     <span class="font-bold text-pizzaDark font-serif text-sm">TripAdvisor</span>
-                    <span class="text-xs text-emerald-700 font-semibold" data-i18n="verified_review">Recensione Verificata</span>
                 </div>
             </div>
         </div>
@@ -729,7 +727,6 @@
                 reviews_subtitle: "Cosa dicono i clienti della vera esperienza da Remo a Testaccio.",
                 review_1_text: "\"La miglior pizza bassa tonda di Roma. Servizio veloce. Prezzi giusti personale simpatico e disponibile. Le persone in fila dimostrano la bontà del prodotto.. Provate la pizza con i funghi porcini, 10 e lode.\"",
                 review_2_text: "\"Ottima esperienza! Una lezione di efficienza italiana e ottimo cibo! Fiori di zucca ripieni e pizza bianca... ti senti come in un'autentica trattoria del posto. Se soggiorni a Testaccio è una visita obbligatoria!\"",
-                verified_review: "Recensione Verificata",
                 contact_badge: "Vieni a Trovarci",
                 contact_title: "Contatti & Orari",
                 contact_subtitle: "Siamo nel cuore di Testaccio pronti ad accogliervi ogni sera.",
@@ -797,7 +794,6 @@
                 reviews_subtitle: "What customers say about the true Remo experience in Testaccio.",
                 review_1_text: "\"The best thin round pizza in Rome. Fast service. Fair prices, friendly and helpful staff. The people in line show how good the product is.. Try the pizza with porcini mushrooms, 10 out of 10.\"",
                 review_2_text: "\"Great experience! A lesson in Italian efficiency and great food! Stuffed pumpkin flowers and white pizza... you feel like you're in an authentic local trattoria. If you stay in Testaccio it's a mandatory visit!\"",
-                verified_review: "Verified Review",
                 contact_badge: "Visit Us",
                 contact_title: "Contacts & Hours",
                 contact_subtitle: "We are in the heart of Testaccio ready to welcome you every evening.",
