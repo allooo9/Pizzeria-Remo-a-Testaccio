@@ -1,638 +1,690 @@
-<!-- Top Announcement Bar -->
-<div class="bg-pizzaDarkRed text-pizzaCream text-xs md:text-sm py-2 px-4 text-center font-medium tracking-wide">
-    <i class="fa-solid fa-motorcycle mr-2 text-pizzaYellow"></i> Consegne a domicilio gratuite a Testaccio | Fuori Testaccio ordine minimo 25€ | Asporto fino alle 22:00
-</div>
-
-<!-- Navigation Bar -->
-<nav id="navbar" class="sticky top-0 z-50 bg-pizzaDark/95 backdrop-blur-md text-white border-b border-pizzaRed/30 transition-all duration-300">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-20">
-            <div class="flex items-center space-x-3">
-                <span class="bg-pizzaRed text-white p-2.5 rounded-xl font-serif font-black text-xl shadow-lg shadow-pizzaRed/40">R</span>
-                <div>
-                    <a href="#" class="font-serif font-bold text-xl md:text-2xl tracking-wider text-white hover:text-pizzaYellow transition">PIZZERIA REMO</a>
-                    <p class="text-xs text-gray-400">Dal cuore di Testaccio, Roma</p>
-                </div>
-            </div>
-            <div class="hidden md:flex items-center space-x-8 font-medium">
-                <a href="#intro" class="hover:text-pizzaYellow transition">Il Locale</a>
-                <a href="#menu" class="hover:text-pizzaYellow transition">Menu</a>
-                <a href="#recensioni" class="hover:text-pizzaYellow transition">Recensioni</a>
-                <a href="#contatti" class="hover:text-pizzaYellow transition">Contatti & Orari</a>
-                <a href="tel:065746270" class="bg-pizzaRed hover:bg-pizzaDarkRed text-white px-5 py-2.5 rounded-full font-bold shadow-md hover:shadow-pizzaRed/50 transition flex items-center space-x-2">
-                    <i class="fa-solid fa-phone"></i>
-                    <span>06.57.46.270</span>
-                </a>
-            </div>
-            <!-- Mobile menu button -->
-            <div class="md:hidden flex items-center">
-                <button id="mobile-menu-btn" class="text-white hover:text-pizzaYellow focus:outline-none p-2">
-                    <i class="fa-solid fa-bars text-2xl"></i>
-                </button>
-            </div>
-        </div>
-    </div>
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-pizzaDark border-t border-gray-800 px-4 pt-3 pb-6 space-y-3">
-        <a href="#intro" class="block py-2 text-gray-200 hover:text-pizzaYellow">Il Locale</a>
-        <a href="#menu" class="block py-2 text-gray-200 hover:text-pizzaYellow">Menu</a>
-        <a href="#recensioni" class="block py-2 text-gray-200 hover:text-pizzaYellow">Recensioni</a>
-        <a href="#contatti" class="block py-2 text-gray-200 hover:text-pizzaYellow">Contatti & Orari</a>
-        <a href="tel:065746270" class="block text-center bg-pizzaRed text-white py-3 rounded-xl font-bold mt-2">
-            <i class="fa-solid fa-phone mr-2"></i> Chiama 06.57.46.270
-        </a>
-    </div>
-</nav>
-
-<!-- Hero / Parallax Header Section -->
-<header class="parallax-bg min-h-[85vh] flex items-center justify-center text-center px-4 relative">
-    <div class="absolute inset-0 bg-gradient-to-t from-pizzaDark via-transparent to-black/40"></div>
-    <div class="relative z-10 max-w-4xl mx-auto space-y-6 text-white py-12">
-        <div class="inline-flex items-center space-x-2 bg-pizzaRed/80 backdrop-blur-sm text-pizzaYellow px-4 py-1.5 rounded-full text-sm font-semibold tracking-wider uppercase shadow-lg">
-            <i class="fa-solid fa-fire"></i>
-            <span>La vera pizza romana bassa e scrocchiarella</span>
-        </div>
-        <h1 class="font-serif font-black text-4xl sm:text-6xl md:text-7xl tracking-tight text-shadow">
-            Pizzeria Remo <span class="text-pizzaYellow block sm:inline">a Testaccio</span>
-        </h1>
-        <p class="text-lg sm:text-2xl text-gray-200 font-light max-w-2xl mx-auto text-shadow">
-            Tradizione, calore e la storica pizza tonda romana dal 19something. L'autentica trattoria di quartiere senza filtri.
-        </p>
-        <div class="pt-6 flex flex-col sm:flex-row justify-center items-center gap-4">
-            <a href="#menu" class="w-full sm:w-auto bg-pizzaRed hover:bg-pizzaDarkRed text-white font-bold px-8 py-4 rounded-xl shadow-xl hover:scale-105 transition duration-300 flex items-center justify-center space-x-3 text-lg">
-                <i class="fa-solid fa-utensils"></i>
-                <span>Scopri il Menu</span>
-            </a>
-            <a href="#contatti" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 font-bold px-8 py-4 rounded-xl transition duration-300 flex items-center justify-center space-x-3 text-lg">
-                <i class="fa-solid fa-map-location-dot"></i>
-                <span>Dove Siamo & Orari</span>
-            </a>
-        </div>
-    </div>
-</header>
-
-<!-- Intro Section -->
-<section id="intro" class="py-20 px-4 max-w-6xl mx-auto">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <div class="space-y-6">
-            <div class="inline-block text-pizzaRed font-bold uppercase tracking-widest text-sm bg-red-100 px-3 py-1 rounded-lg">
-                L'Istituzione Romana
-            </div>
-            <h2 class="font-serif font-bold text-3xl sm:text-4xl text-pizzaDark leading-tight">
-                Un tempio della romanità verace nel cuore di Testaccio
-            </h2>
-            <p class="text-gray-700 text-lg leading-relaxed">
-                Pizzeria Remo è molto più di una semplice pizzeria: è un vero e proprio punto di riferimento per romani e visitatori. Famosa per la sua proverbiale fila fuori dal locale — testimonianza inequivocabile della bontà ineguagliabile del prodotto — offre un'esperienza autentica, chiassosa e calorosa.
-            </p>
-            <p class="text-gray-700 text-lg leading-relaxed">
-                Qui la pizza è rigorosamente <strong>bassa, tonda e croccante</strong> (la classica "scrocchiarella" romana), accompagnata da fritti leggendari come i supplì al telefono e i filetti di baccalà. Servizio rapido, prezzi onesti e un'atmosfera che sa di casa.
-            </p>
-            <div class="grid grid-cols-2 gap-4 pt-4">
-                <div class="bg-white p-5 rounded-2xl shadow-sm border border-orange-100 flex items-center space-x-4">
-                    <div class="bg-pizzaRed/10 text-pizzaRed p-3 rounded-xl text-xl">
-                        <i class="fa-solid fa-pizza-slice"></i>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-pizzaDark">Pizza Bassa</h4>
-                        <p class="text-xs text-gray-500">Stile romano doc</p>
-                    </div>
-                </div>
-                <div class="bg-white p-5 rounded-2xl shadow-sm border border-orange-100 flex items-center space-x-4">
-                    <div class="bg-pizzaYellow/20 text-pizzaGold p-3 rounded-xl text-xl">
-                        <i class="fa-solid fa-fire-burner"></i>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-pizzaDark">Forno a Legna</h4>
-                        <p class="text-xs text-gray-500">Cottura tradizionale</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="relative">
-            <div class="absolute -inset-4 bg-gradient-to-r from-pizzaRed to-pizzaYellow rounded-3xl opacity-30 blur-xl"></div>
-            <div class="relative bg-white p-4 rounded-3xl shadow-xl border border-gray-100">
-                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=800" alt="Pizzeria Remo Interno" class="rounded-2xl w-full h-[400px] object-cover">
-                <div class="absolute bottom-8 left-8 right-8 bg-pizzaDark/90 backdrop-blur-md text-white p-6 rounded-2xl border border-white/10 shadow-2xl">
-                    <div class="flex items-center space-x-3 text-pizzaYellow mb-1">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="font-serif italic text-sm text-gray-200">"Le persone in fila dimostrano la bontà del prodotto. Un'esperienza imperdibile a Roma."</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- MENU SECTION -->
-<section id="menu" class="py-20 bg-pizzaDark text-white relative">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <span class="text-pizzaYellow font-bold uppercase tracking-widest text-sm bg-pizzaYellow/10 px-4 py-1.5 rounded-full inline-block">Il Nostro Listino</span>
-            <h2 class="font-serif font-black text-4xl sm:text-5xl">Il Menu Ufficiale</h2>
-            <p class="text-gray-400 text-lg">Tutti i sapori della tradizione romana preparati con ingredienti genuini.</p>
-        </div>
-
-        <!-- Menu Category Navigation Tabs -->
-        <div class="flex flex-wrap justify-center gap-2 mb-12">
-            <button onclick="filterMenu('all')" class="menu-tab active-tab bg-pizzaRed text-white px-6 py-2.5 rounded-full font-bold text-sm shadow-md transition">Tutti</button>
-            <button onclick="filterMenu('pizze')" class="menu-tab bg-stone-800 hover:bg-stone-700 text-gray-300 px-6 py-2.5 rounded-full font-bold text-sm transition">Pizze & Crostini</button>
-            <button onclick="filterMenu('fritti')" class="menu-tab bg-stone-800 hover:bg-stone-700 text-gray-300 px-6 py-2.5 rounded-full font-bold text-sm transition">Fritti</button>
-            <button onclick="filterMenu('contorni')" class="menu-tab bg-stone-800 hover:bg-stone-700 text-gray-300 px-6 py-2.5 rounded-full font-bold text-sm transition">Contorni & Dolci</button>
-            <button onclick="filterMenu('bevande')" class="menu-tab bg-stone-800 hover:bg-stone-700 text-gray-300 px-6 py-2.5 rounded-full font-bold text-sm transition">Bevande</button>
-        </div>
-
-        <!-- Menu Grid Container -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-            <!-- PIZZE BIANCHE -->
-            <div class="menu-card bg-stone-900/90 border border-stone-800 rounded-2xl p-6 shadow-xl" data-category="pizze">
-                <div class="flex items-center space-x-3 mb-6 border-b border-stone-800 pb-4">
-                    <div class="bg-pizzaYellow text-pizzaDark p-2.5 rounded-xl font-bold">
-                        <i class="fa-solid fa-pizza-slice"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-serif font-bold text-xl text-pizzaYellow">Pizze Bianche*</h3>
-                        <p class="text-xs text-gray-400">Classiche della tradizione romana</p>
-                    </div>
-                </div>
-                <ul class="space-y-4">
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
-                        <span class="font-medium text-gray-200">Fiori di Zucca</span>
-                        <span class="font-bold text-pizzaYellow font-serif">8,50 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
-                        <span class="font-medium text-gray-200">Gorgonzola</span>
-                        <span class="font-bold text-pizzaYellow font-serif">8,00 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
-                        <span class="font-medium text-gray-200">Puntarelle</span>
-                        <span class="font-bold text-pizzaYellow font-serif">9,00 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
-                        <span class="font-medium text-gray-200">Salmone</span>
-                        <span class="font-bold text-pizzaYellow font-serif">8,50 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
-                        <span class="font-medium text-gray-200">Pachino</span>
-                        <span class="font-bold text-pizzaYellow font-serif">7,50 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
-                        <span class="font-medium text-gray-200">Rughetta</span>
-                        <span class="font-bold text-pizzaYellow font-serif">7,50 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
-                        <span class="font-medium text-gray-200">Bresaola</span>
-                        <span class="font-bold text-pizzaYellow font-serif">8,00 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
-                        <span class="font-medium text-gray-200">Prosciutto Crudo</span>
-                        <span class="font-bold text-pizzaYellow font-serif">8,00 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
-                        <span class="font-medium text-gray-200">Focaccia con Prosciutto</span>
-                        <span class="font-bold text-pizzaYellow font-serif">7,50 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline pb-1">
-                        <span class="font-medium text-gray-200">Crostino</span>
-                        <span class="font-bold text-pizzaYellow font-serif">8,00 €</span>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- PIZZE ROSSE -->
-            <div class="menu-card bg-stone-900/90 border border-stone-800 rounded-2xl p-6 shadow-xl" data-category="pizze">
-                <div class="flex items-center space-x-3 mb-6 border-b border-stone-800 pb-4">
-                    <div class="bg-pizzaRed text-white p-2.5 rounded-xl font-bold">
-                        <i class="fa-solid fa-fire"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-serif font-bold text-xl text-pizzaRed">Pizze Rosse*</h3>
-                        <p class="text-xs text-gray-400">Pomodoro e condimenti freschi</p>
-                    </div>
-                </div>
-                <ul class="space-y-3.5 max-h-[420px] overflow-y-auto pr-2">
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
-                        <span class="font-medium text-gray-200">Remo (specialità)</span>
-                        <span class="font-bold text-pizzaYellow font-serif">8,50 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
-                        <span class="font-medium text-gray-200">Salsiccia</span>
-                        <span class="font-bold text-pizzaYellow font-serif">7,50 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
-                        <span class="font-medium text-gray-200">Melanzane</span>
-                        <span class="font-bold text-pizzaYellow font-serif">7,50 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
-                        <span class="font-medium text-gray-200">Capricciosa</span>
-                        <span class="font-bold text-pizzaYellow font-serif">8,50 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
-                        <span class="font-medium text-gray-200">Funghi (Porcini top!)</span>
-                        <span class="font-bold text-pizzaYellow font-serif">7,00 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
-                        <span class="font-medium text-gray-200">Margherita</span>
-                        <span class="font-bold text-pizzaYellow font-serif">6,00 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
-                        <span class="font-medium text-gray-200">Margherita Wustel</span>
-                        <span class="font-bold text-pizzaYellow font-serif">7,50 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
-                        <span class="font-medium text-gray-200">Margherita con Bufala</span>
-                        <span class="font-bold text-pizzaYellow font-serif">8,50 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
-                        <span class="font-medium text-gray-200">Verdure</span>
-                        <span class="font-bold text-pizzaYellow font-serif">8,50 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
-                        <span class="font-medium text-gray-200">Diavola</span>
-                        <span class="font-bold text-pizzaYellow font-serif">7,50 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
-                        <span class="font-medium text-gray-200">Napoli</span>
-                        <span class="font-bold text-pizzaYellow font-serif">6,00 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
-                        <span class="font-medium text-gray-200">Marinara</span>
-                        <span class="font-bold text-pizzaYellow font-serif">6,00 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline pb-1">
-                        <span class="font-medium text-gray-200">Calzone</span>
-                        <span class="font-bold text-pizzaYellow font-serif">8,50 €</span>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- CROSTINI & FRITTI -->
-            <div class="menu-card bg-stone-900/90 border border-stone-800 rounded-2xl p-6 shadow-xl" data-category="fritti">
-                <div class="flex items-center space-x-3 mb-6 border-b border-stone-800 pb-4">
-                    <div class="bg-amber-600 text-white p-2.5 rounded-xl font-bold">
-                        <i class="fa-solid fa-bowl-food"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-serif font-bold text-xl text-amber-500">Crostini & Fritti</h3>
-                        <p class="text-xs text-gray-400">Sfizi imperdibili</p>
-                    </div>
-                </div>
-                <ul class="space-y-4">
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
-                        <span class="font-medium text-gray-200">Supplì al telefono</span>
-                        <span class="font-bold text-pizzaYellow font-serif">1,30 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
-                        <span class="font-medium text-gray-200">Filetto di Baccalà</span>
-                        <span class="font-bold text-pizzaYellow font-serif">4,00 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
-                        <span class="font-medium text-gray-200">Fiori di Zucca (Ripieni)</span>
-                        <span class="font-bold text-pizzaYellow font-serif">2,50 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
-                        <span class="font-medium text-gray-200">Olive Ascolane (8 pz)</span>
-                        <span class="font-bold text-pizzaYellow font-serif">4,00 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
-                        <span class="font-medium text-gray-200">Crocchette (2 pz)</span>
-                        <span class="font-bold text-pizzaYellow font-serif">1,00 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline pb-1">
-                        <span class="font-medium text-gray-200">Patate Frritte</span>
-                        <span class="font-bold text-pizzaYellow font-serif">4,00 €</span>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- CROSTINI SPECIALI -->
-            <div class="menu-card bg-stone-900/90 border border-stone-800 rounded-2xl p-6 shadow-xl" data-category="pizze">
-                <div class="flex items-center space-x-3 mb-6 border-b border-stone-800 pb-4">
-                    <div class="bg-pizzaYellow text-pizzaDark p-2.5 rounded-xl font-bold">
-                        <i class="fa-solid fa-bread-slice"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-serif font-bold text-xl text-pizzaYellow">Crostini*</h3>
-                        <p class="text-xs text-gray-400">Base croccante al forno</p>
-                    </div>
-                </div>
-                <ul class="space-y-4">
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
-                        <span class="font-medium text-gray-200">Alici</span>
-                        <span class="font-bold text-pizzaYellow font-serif">8,50 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
-                        <span class="font-medium text-gray-200">Prosciutto</span>
-                        <span class="font-bold text-pizzaYellow font-serif">7,50 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
-                        <span class="font-medium text-gray-200">Capriccioso</span>
-                        <span class="font-bold text-pizzaYellow font-serif">8,00 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline pb-1">
-                        <span class="font-medium text-gray-200">Salmone</span>
-                        <span class="font-bold text-pizzaYellow font-serif">8,50 €</span>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- CONTORNI & DOLCI -->
-            <div class="menu-card bg-stone-900/90 border border-stone-800 rounded-2xl p-6 shadow-xl" data-category="contorni">
-                <div class="flex items-center space-x-3 mb-6 border-b border-stone-800 pb-4">
-                    <div class="bg-emerald-600 text-white p-2.5 rounded-xl font-bold">
-                        <i class="fa-solid fa-carrot"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-serif font-bold text-xl text-emerald-400">Contorni & Dolci</h3>
-                        <p class="text-xs text-gray-400">Freschezza e dessert del giorno</p>
-                    </div>
-                </div>
-                <ul class="space-y-4">
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
-                        <span class="font-medium text-gray-200">Melanzana Parmigiana</span>
-                        <span class="font-bold text-pizzaYellow font-serif">8,00 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
-                        <span class="font-medium text-gray-200">Verdure Cotte (broccoli, cicoria)</span>
-                        <span class="font-bold text-pizzaYellow font-serif">6,00 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
-                        <span class="font-medium text-gray-200">Puntarelle</span>
-                        <span class="font-bold text-pizzaYellow font-serif">5,00 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline pb-1">
-                        <span class="font-medium text-gray-200">Dolci (richiedi disponibilità)</span>
-                        <span class="font-bold text-pizzaYellow font-serif">4,50 €</span>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- BEVANDE -->
-            <div class="menu-card bg-stone-900/90 border border-stone-800 rounded-2xl p-6 shadow-xl" data-category="bevande">
-                <div class="flex items-center space-x-3 mb-6 border-b border-stone-800 pb-4">
-                    <div class="bg-sky-600 text-white p-2.5 rounded-xl font-bold">
-                        <i class="fa-solid fa-beer-mug-empty"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-serif font-bold text-xl text-sky-400">Bevande & Birre</h3>
-                        <p class="text-xs text-gray-400">Bibite e birre alla spina o bottiglia</p>
-                    </div>
-                </div>
-                <ul class="space-y-3.5 max-h-[420px] overflow-y-auto pr-2">
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
-                        <span class="font-medium text-gray-200">Acqua</span>
-                        <span class="font-bold text-pizzaYellow font-serif">2,00 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
-                        <span class="font-medium text-gray-200">Coca Cola</span>
-                        <span class="font-bold text-pizzaYellow font-serif">3,00 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
-                        <span class="font-medium text-gray-200">Gassosa</span>
-                        <span class="font-bold text-pizzaYellow font-serif">2,00 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
-                        <span class="font-medium text-gray-200">Chinotto Neri</span>
-                        <span class="font-bold text-pizzaYellow font-serif">2,50 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
-                        <span class="font-medium text-gray-200">Aranciata</span>
-                        <span class="font-bold text-pizzaYellow font-serif">3,00 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
-                        <span class="font-medium text-gray-200">Birra Moretti 66cl</span>
-                        <span class="font-bold text-pizzaYellow font-serif">4,50 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
-                        <span class="font-medium text-gray-200">Birra Manabrea 33cl</span>
-                        <span class="font-bold text-pizzaYellow font-serif">3,00 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
-                        <span class="font-medium text-gray-200">Birra Manabrea 66cl</span>
-                        <span class="font-bold text-pizzaYellow font-serif">4,50 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
-                        <span class="font-medium text-gray-200">Birra Ichnusa 50cl</span>
-                        <span class="font-bold text-pizzaYellow font-serif">4,50 €</span>
-                    </li>
-                    <li class="flex justify-between items-baseline pb-1">
-                        <span class="font-medium text-gray-200">Birra Peroni Rossa</span>
-                        <span class="font-bold text-pizzaYellow font-serif">4,50 €</span>
-                    </li>
-                </ul>
-            </div>
-
-        </div>
-        
-        <div class="mt-12 text-center text-sm text-gray-400 bg-stone-900 p-6 rounded-2xl border border-stone-800 max-w-3xl mx-auto space-y-2">
-            <p><i class="fa-solid fa-circle-info text-pizzaYellow mr-2"></i> * Ad ogni ingrediente aggiunto +1,00 €</p>
-            <p><i class="fa-solid fa-motorcycle text-pizzaYellow mr-2"></i> <strong>Zone di consegna:</strong> Testaccio, San Saba, Aventino, Trastevere, Marconi, Garbatella, Ostiense, Monteverde, Portuense, Magliana, Montagnola, EUR.</p>
-        </div>
-    </div>
-</section>
-
-<!-- REVIEWS SECTION -->
-<section id="recensioni" class="py-20 px-4 max-w-5xl mx-auto">
-    <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-        <span class="text-pizzaRed font-bold uppercase tracking-widest text-sm bg-red-100 px-4 py-1.5 rounded-full inline-block">Dicono di Noi</span>
-        <h2 class="font-serif font-black text-4xl sm:text-5xl text-pizzaDark">Recensioni Verificate</h2>
-        <p class="text-gray-600 text-lg">Cosa pensano i clienti della vera esperienza da Remo a Testaccio.</p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <!-- Review 1 -->
-        <div class="bg-white p-8 rounded-3xl shadow-xl border border-orange-100 flex flex-col justify-between relative overflow-hidden group hover:shadow-2xl transition">
-            <div class="absolute top-0 right-0 bg-red-50 text-pizzaRed px-4 py-2 rounded-bl-2xl font-bold text-xs uppercase tracking-wider">
-                tramite piatti.menu
-            </div>
-            <div class="space-y-4">
-                <div class="text-pizzaYellow flex space-x-1 text-lg">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <p class="text-gray-700 italic text-lg leading-relaxed">
-                    "La miglior pizza bassa tonda di Roma. Servizio veloce. Prezzi giusti personale simpatico e disponibile. Le persone in fila dimostrano la bontà del prodotto.. Provate la pizza con i funghi porcini, 10 e lode."
-                </p>
-            </div>
-            <div class="pt-6 mt-6 border-t border-gray-100 flex items-center space-x-3">
-                <div class="bg-pizzaRed text-white font-bold w-10 h-10 rounded-full flex items-center justify-center font-serif">
-                    PM
-                </div>
-                <div>
-                    <h4 class="font-bold text-pizzaDark">Cliente Verificato</h4>
-                    <p class="text-xs text-gray-500">Recensione da piatti.menu</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Review 2 -->
-        <div class="bg-white p-8 rounded-3xl shadow-xl border border-orange-100 flex flex-col justify-between relative overflow-hidden group hover:shadow-2xl transition">
-            <div class="absolute top-0 right-0 bg-emerald-50 text-emerald-700 px-4 py-2 rounded-bl-2xl font-bold text-xs uppercase tracking-wider">
-                tramite tripadvisor
-            </div>
-            <div class="space-y-4">
-                <div class="text-pizzaYellow flex space-x-1 text-lg">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <p class="text-gray-700 italic text-lg leading-relaxed">
-                    "Ottima esperienza! Una lezione di efficienza italiana e ottimo cibo! Fiori di zucca ripieni e pizza bianca... ti senti come in un'autentica trattoria del posto. Se soggiorni a Testaccio è una visita obbligatoria!"
-                </p>
-            </div>
-            <div class="pt-6 mt-6 border-t border-gray-100 flex items-center space-x-3">
-                <div class="bg-emerald-600 text-white font-bold w-10 h-10 rounded-full flex items-center justify-center font-serif">
-                    TA
-                </div>
-                <div>
-                    <h4 class="font-bold text-pizzaDark">Viaggiatore TripAdvisor</h4>
-                    <p class="text-xs text-gray-500">Recensione TripAdvisor</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- CONTACTS, HOURS & MAP SECTION -->
-<section id="contatti" class="py-20 bg-stone-100 border-t border-stone-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <span class="text-pizzaRed font-bold uppercase tracking-widest text-sm bg-red-100 px-4 py-1.5 rounded-full inline-block">Vieni a Trovarci</span>
-            <h2 class="font-serif font-black text-4xl sm:text-5xl text-pizzaDark">Contatti & Orari</h2>
-            <p class="text-gray-600 text-lg">Siamo nel cuore di Testaccio pronti ad accogliervi ogni sera.</p>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <!-- Info Card -->
-            <div class="bg-white p-8 rounded-3xl shadow-xl border border-orange-100 space-y-8 lg:col-span-1">
-                <div class="flex items-start space-x-4">
-                    <div class="bg-pizzaRed text-white p-3.5 rounded-2xl text-xl shadow-md">
-                        <i class="fa-solid fa-location-dot"></i>
-                    </div>
-                    <div>
-                        <h4 class="font-serif font-bold text-lg text-pizzaDark">Indirizzo</h4>
-                        <p class="text-gray-600">Piazza S. Maria Liberatrice 44<br><span class="text-sm text-gray-500">00153 Testaccio, Roma (RM)</span></p>
-                    </div>
-                </div>
-
-                <div class="flex items-start space-x-4">
-                    <div class="bg-pizzaYellow text-pizzaDark p-3.5 rounded-2xl text-xl shadow-md">
-                        <i class="fa-solid fa-phone"></i>
-                    </div>
-                    <div>
-                        <h4 class="font-serif font-bold text-lg text-pizzaDark">Telefono</h4>
-                        <a href="tel:065746270" class="text-pizzaRed font-bold text-lg hover:underline">06.57.46.270</a>
-                        <p class="text-xs text-gray-500">Prenotazioni e asporto</p>
-                    </div>
-                </div>
-
-                <div class="flex items-start space-x-4">
-                    <div class="bg-stone-900 text-white p-3.5 rounded-2xl text-xl shadow-md">
-                        <i class="fa-solid fa-clock"></i>
-                    </div>
-                    <div>
-                        <h4 class="font-serif font-bold text-lg text-pizzaDark">Orari di Apertura</h4>
-                        <ul class="text-sm text-gray-600 space-y-1 mt-1">
-                            <li class="flex justify-between"><span class="font-medium text-gray-800">Lunedì - Sabato:</span> <span class="text-pizzaRed font-semibold">19:00 - 01:00</span></li>
-                            <li class="flex justify-between"><span class="font-medium text-gray-800">Domenica:</span> <span class="text-red-600 font-semibold">Chiuso</span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="bg-amber-50 border border-amber-200 p-4 rounded-2xl text-xs text-amber-900 space-y-1">
-                    <p class="font-bold"><i class="fa-solid fa-triangle-exclamation mr-1"></i> Informazioni Asporto & Consegne:</p>
-                    <p>• Ritiro d'asporto disponibile fino alle 22:00.</p>
-                    <p>• Consegne fuori Testaccio: ordine minimo 25€.</p>
-                </div>
-            </div>
-
-            <!-- Minimap Embed -->
-            <div class="bg-white p-4 rounded-3xl shadow-xl border border-orange-100 lg:col-span-2 overflow-hidden flex flex-col">
-                <div class="w-full h-full min-h-[400px] rounded-2xl overflow-hidden relative">
-                    <iframe 
-                        src="https://maps.google.com/maps?q=Piazza+Santa+Maria+Liberatrice+44+Roma+Testaccio&t=&z=16&ie=UTF8&iwloc=&output=embed" 
-                        width="100%" 
-                        height="100%" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade"
-                        class="w-full h-full rounded-2xl">
-                    </iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Footer -->
-<footer class="bg-pizzaDark text-gray-400 py-12 border-t border-stone-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
-        <div class="flex items-center space-x-3">
-            <span class="bg-pizzaRed text-white p-2 rounded-xl font-serif font-black text-lg">R</span>
-            <div>
-                <span class="font-serif font-bold text-white text-lg">PIZZERIA REMO</span>
-                <p class="text-xs">Piazza S. Maria Liberatrice 44, Testaccio (Roma)</p>
-            </div>
-        </div>
-        <div class="text-sm text-center md:text-right">
-            <p>&copy; 2026 Pizzeria Remo a Testaccio. Tutti i diritti riservati.</p>
-            <p class="text-xs text-gray-500 mt-1">Sito storico non ufficiale realizzato con passione per i veri amanti della pizza romana.</p>
-        </div>
-    </div>
-</footer>
-
-<!-- JavaScript for Menu Filtering & Mobile Menu Toggle -->
-<script>
-    // Mobile menu toggle
-    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    mobileMenuBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-    });
-
-    // Close mobile menu when clicking a link
-    document.querySelectorAll('#mobile-menu a').forEach(link => {
-        link.addEventListener('click', () => {
-            mobileMenu.classList.add('hidden');
-        });
-    });
-
-    // Menu filter function
-    function filterMenu(category) {
-        const cards = document.querySelectorAll('.menu-card');
-        const tabs = document.querySelectorAll('.menu-tab');
-
-        // Update active tab styling
-        tabs.forEach(tab => {
-            tab.classList.remove('bg-pizzaRed', 'text-white', 'shadow-md');
-            tab.classList.add('bg-stone-800', 'text-gray-300');
-        });
-        event.target.classList.remove('bg-stone-800', 'text-gray-300');
-        event.target.classList.add('bg-pizzaRed', 'text-white', 'shadow-md');
-
-        // Show/Hide cards
-        cards.forEach(card => {
-            if (category === 'all') {
-                card.style.display = 'block';
-            } else {
-                const cardCategory = card.getAttribute('data-category');
-                if (cardCategory === category) {
-                    card.style.display = 'block';
-                } else {
-                    card.style.display = 'none';
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria Remo a Testaccio | La Vera Pizza Romana</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pizzaRed: '#C5221F',
+                        pizzaDarkRed: '#961715',
+                        pizzaYellow: '#F4B41A',
+                        pizzaGold: '#D4960B',
+                        pizzaDark: '#1A120B',
+                        pizzaCream: '#FDFBF7'
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif']
+                    }
                 }
             }
+        }
+    </script>
+    <style>
+        .parallax-bg {
+            background-image: linear-gradient(rgba(26, 18, 11, 0.75), rgba(26, 18, 11, 0.85)), url('https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QQ18ahSjOJU34H3nA63e2VH-R5cqt8Xy5iKMbYIzLU1jxxkbpJutCefvzEGSMUf4MVhk_fEieyjfdPkxK3dW4EedqnE32lJCOPBDLdUMq1FY5JqzLEIOB_s1hr-OGVrSvNe0_t_w=s1360-w1360-h1020-rw');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body class="bg-pizzaCream text-pizzaDark font-sans antialiased selection:bg-pizzaRed selection:text-white">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-pizzaDarkRed text-pizzaCream text-xs md:text-sm py-2.5 px-4 text-center font-medium tracking-wide shadow-inner">
+        <i class="fa-solid fa-motorcycle mr-2 text-pizzaYellow animate-pulse"></i> Consegne a domicilio (fuori Testaccio ordine min. 25€) | Asporto fino alle 22:00
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="sticky top-0 z-50 bg-pizzaDark/95 backdrop-blur-md text-white border-b border-pizzaRed/30 transition-all duration-300 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-3">
+                    <span class="bg-pizzaRed text-white p-2.5 rounded-xl font-serif font-black text-xl shadow-lg shadow-pizzaRed/40">R</span>
+                    <div>
+                        <a href="#" class="font-serif font-bold text-xl md:text-2xl tracking-wider text-white hover:text-pizzaYellow transition">PIZZERIA REMO</a>
+                        <p class="text-xs text-gray-400">Dal cuore di Testaccio, Roma</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8 font-medium">
+                    <a href="#intro" class="hover:text-pizzaYellow transition duration-200">Il Locale</a>
+                    <a href="#menu" class="hover:text-pizzaYellow transition duration-200">Menu</a>
+                    <a href="#recensioni" class="hover:text-pizzaYellow transition duration-200">Recensioni</a>
+                    <a href="#contatti" class="hover:text-pizzaYellow transition duration-200">Contatti & Orari</a>
+                    <a href="tel:065746270" class="bg-pizzaRed hover:bg-pizzaDarkRed text-white px-5 py-2.5 rounded-full font-bold shadow-md hover:shadow-pizzaRed/50 transition flex items-center space-x-2">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>06.57.46.270</span>
+                    </a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white hover:text-pizzaYellow focus:outline-none p-2">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-pizzaDark border-t border-gray-800 px-4 pt-3 pb-6 space-y-3">
+            <a href="#intro" class="block py-2 text-gray-200 hover:text-pizzaYellow">Il Locale</a>
+            <a href="#menu" class="block py-2 text-gray-200 hover:text-pizzaYellow">Menu</a>
+            <a href="#recensioni" class="block py-2 text-gray-200 hover:text-pizzaYellow">Recensioni</a>
+            <a href="#contatti" class="block py-2 text-gray-200 hover:text-pizzaYellow">Contatti & Orari</a>
+            <a href="tel:065746270" class="block text-center bg-pizzaRed text-white py-3 rounded-xl font-bold mt-2 shadow">
+                <i class="fa-solid fa-phone mr-2"></i> Chiama 06.57.46.270
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Parallax Header Section -->
+    <header class="parallax-bg min-h-[85vh] flex items-center justify-center text-center px-4 relative">
+        <div class="absolute inset-0 bg-gradient-to-t from-pizzaDark via-transparent to-black/30"></div>
+        <div class="relative z-10 max-w-4xl mx-auto space-y-6 text-white py-12">
+            <div class="inline-flex items-center space-x-2 bg-pizzaRed/90 backdrop-blur-sm text-pizzaYellow px-4 py-1.5 rounded-full text-sm font-semibold tracking-wider uppercase shadow-xl">
+                <i class="fa-solid fa-fire"></i>
+                <span>La storica pizza romana bassa e scrocchiarella</span>
+            </div>
+            <h1 class="font-serif font-black text-4xl sm:text-6xl md:text-7xl tracking-tight text-shadow">
+                Pizzeria Remo <span class="text-pizzaYellow block sm:inline">a Testaccio</span>
+            </h1>
+            <p class="text-lg sm:text-2xl text-gray-200 font-light max-w-2xl mx-auto text-shadow">
+                Tradizione verace, calore di quartiere e la leggendaria pizza tonda romana. Un'esperienza imperdibile nella capitale.
+            </p>
+            <div class="pt-6 flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#menu" class="w-full sm:w-auto bg-pizzaRed hover:bg-pizzaDarkRed text-white font-bold px-8 py-4 rounded-xl shadow-xl hover:scale-105 transition duration-300 flex items-center justify-center space-x-3 text-lg">
+                    <i class="fa-solid fa-utensils"></i>
+                    <span>Esplora il Menu</span>
+                </a>
+                <a href="#contatti" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 font-bold px-8 py-4 rounded-xl transition duration-300 flex items-center justify-center space-x-3 text-lg">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <span>Dove Siamo & Orari</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Intro Section -->
+    <section id="intro" class="py-20 px-4 max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <div class="inline-block text-pizzaRed font-bold uppercase tracking-widest text-sm bg-red-100 px-3 py-1 rounded-lg">
+                    L'Istituzione Romana
+                </div>
+                <h2 class="font-serif font-bold text-3xl sm:text-4xl text-pizzaDark leading-tight">
+                    Un tempio della romanità verace nel cuore di Testaccio
+                </h2>
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    Pizzeria Remo è molto più di una semplice pizzeria: è un punto di riferimento storico per romani e visitatori. Famosa per la proverbiale fila fuori dal locale — testimonianza inequivocabile della bontà ineguagliabile del prodotto — offre un'atmosfera autentica, chiassosa e calorosa.
+                </p>
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    Qui la pizza è rigorosamente <strong>bassa, tonda e croccante</strong> (la classica "scrocchiarella"), accompagnata da fritti leggendari come i supplì al telefono e i filetti di baccalà. Servizio rapido, prezzi onesti e un'ospitalità che sa di famiglia.
+                </p>
+                <div class="grid grid-cols-2 gap-4 pt-2">
+                    <div class="bg-white p-5 rounded-2xl shadow-sm border border-orange-100 flex items-center space-x-4">
+                        <div class="bg-pizzaRed/10 text-pizzaRed p-3 rounded-xl text-xl">
+                            <i class="fa-solid fa-pizza-slice"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-pizzaDark">Pizza Bassa</h4>
+                            <p class="text-xs text-gray-500">Stile romano doc</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-5 rounded-2xl shadow-sm border border-orange-100 flex items-center space-x-4">
+                        <div class="bg-pizzaYellow/20 text-pizzaGold p-3 rounded-xl text-xl">
+                            <i class="fa-solid fa-fire-burner"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-pizzaDark">Forno a Legna</h4>
+                            <p class="text-xs text-gray-500">Cottura tradizionale</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -inset-4 bg-gradient-to-r from-pizzaRed to-pizzaYellow rounded-3xl opacity-20 blur-xl"></div>
+                <div class="relative bg-white p-4 rounded-3xl shadow-xl border border-gray-100">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=800" alt="Pizzeria Remo Interno" class="rounded-2xl w-full h-[420px] object-cover shadow-inner">
+                    <div class="absolute bottom-8 left-8 right-8 bg-pizzaDark/90 backdrop-blur-md text-white p-6 rounded-2xl border border-white/10 shadow-2xl">
+                        <div class="flex items-center space-x-1 text-pizzaYellow mb-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="font-serif italic text-sm text-gray-200">"Le persone in fila dimostrano la bontà del prodotto. Un'esperienza imperdibile a Roma."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section id="menu" class="py-20 bg-pizzaDark text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-pizzaYellow font-bold uppercase tracking-widest text-sm bg-pizzaYellow/10 px-4 py-1.5 rounded-full inline-block">Il Nostro Listino</span>
+                <h2 class="font-serif font-black text-4xl sm:text-5xl">Il Menu Ufficiale</h2>
+                <p class="text-gray-400 text-lg">Tutti i sapori della tradizione romana preparati con ingredienti genuini.</p>
+            </div>
+
+            <!-- Menu Category Navigation Tabs -->
+            <div class="flex flex-wrap justify-center gap-2 mb-12">
+                <button onclick="filterMenu('all')" class="menu-tab active-tab bg-pizzaRed text-white px-6 py-2.5 rounded-full font-bold text-sm shadow-md transition">Tutti</button>
+                <button onclick="filterMenu('pizze')" class="menu-tab bg-stone-800 hover:bg-stone-700 text-gray-300 px-6 py-2.5 rounded-full font-bold text-sm transition">Pizze & Crostini</button>
+                <button onclick="filterMenu('fritti')" class="menu-tab bg-stone-800 hover:bg-stone-700 text-gray-300 px-6 py-2.5 rounded-full font-bold text-sm transition">Fritti & Sfizi</button>
+                <button onclick="filterMenu('contorni')" class="menu-tab bg-stone-800 hover:bg-stone-700 text-gray-300 px-6 py-2.5 rounded-full font-bold text-sm transition">Contorni & Dolci</button>
+                <button onclick="filterMenu('bevande')" class="menu-tab bg-stone-800 hover:bg-stone-700 text-gray-300 px-6 py-2.5 rounded-full font-bold text-sm transition">Bevande</button>
+            </div>
+
+            <!-- Menu Grid Container -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- PIZZE BIANCHE -->
+                <div class="menu-card bg-stone-900/90 border border-stone-800 rounded-2xl p-6 shadow-xl" data-category="pizze">
+                    <div class="flex items-center space-x-3 mb-6 border-b border-stone-800 pb-4">
+                        <div class="bg-pizzaYellow text-pizzaDark p-2.5 rounded-xl font-bold">
+                            <i class="fa-solid fa-pizza-slice"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-serif font-bold text-xl text-pizzaYellow">Pizze Bianche*</h3>
+                            <p class="text-xs text-gray-400">Classiche della tradizione romana</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
+                            <span class="font-medium text-gray-200">Fiori di Zucca</span>
+                            <span class="font-bold text-pizzaYellow font-serif">8,50 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
+                            <span class="font-medium text-gray-200">Gorgonzola</span>
+                            <span class="font-bold text-pizzaYellow font-serif">8,00 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
+                            <span class="font-medium text-gray-200">Puntarelle</span>
+                            <span class="font-bold text-pizzaYellow font-serif">9,00 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
+                            <span class="font-medium text-gray-200">Salmone</span>
+                            <span class="font-bold text-pizzaYellow font-serif">8,50 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
+                            <span class="font-medium text-gray-200">Pachino</span>
+                            <span class="font-bold text-pizzaYellow font-serif">7,50 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
+                            <span class="font-medium text-gray-200">Rughetta</span>
+                            <span class="font-bold text-pizzaYellow font-serif">7,50 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
+                            <span class="font-medium text-gray-200">Bresaola</span>
+                            <span class="font-bold text-pizzaYellow font-serif">8,00 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
+                            <span class="font-medium text-gray-200">Prosciutto Crudo</span>
+                            <span class="font-bold text-pizzaYellow font-serif">8,00 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
+                            <span class="font-medium text-gray-200">Focaccia con Prosciutto</span>
+                            <span class="font-bold text-pizzaYellow font-serif">7,50 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline pb-1">
+                            <span class="font-medium text-gray-200">Crostino</span>
+                            <span class="font-bold text-pizzaYellow font-serif">8,00 €</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- PIZZE ROSSE -->
+                <div class="menu-card bg-stone-900/90 border border-stone-800 rounded-2xl p-6 shadow-xl" data-category="pizze">
+                    <div class="flex items-center space-x-3 mb-6 border-b border-stone-800 pb-4">
+                        <div class="bg-pizzaRed text-white p-2.5 rounded-xl font-bold">
+                            <i class="fa-solid fa-fire"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-serif font-bold text-xl text-pizzaRed">Pizze Rosse*</h3>
+                            <p class="text-xs text-gray-400">Pomodoro e condimenti freschi</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3.5 max-h-[420px] overflow-y-auto pr-2">
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
+                            <span class="font-medium text-gray-200">Remo (specialità)</span>
+                            <span class="font-bold text-pizzaYellow font-serif">8,50 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
+                            <span class="font-medium text-gray-200">Salsiccia</span>
+                            <span class="font-bold text-pizzaYellow font-serif">7,50 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
+                            <span class="font-medium text-gray-200">Melanzane</span>
+                            <span class="font-bold text-pizzaYellow font-serif">7,50 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
+                            <span class="font-medium text-gray-200">Capricciosa</span>
+                            <span class="font-bold text-pizzaYellow font-serif">8,50 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
+                            <span class="font-medium text-gray-200">Funghi (Porcini top!)</span>
+                            <span class="font-bold text-pizzaYellow font-serif">7,00 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
+                            <span class="font-medium text-gray-200">Margherita</span>
+                            <span class="font-bold text-pizzaYellow font-serif">6,00 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
+                            <span class="font-medium text-gray-200">Margherita Wustel</span>
+                            <span class="font-bold text-pizzaYellow font-serif">7,50 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
+                            <span class="font-medium text-gray-200">Margherita con Bufala</span>
+                            <span class="font-bold text-pizzaYellow font-serif">8,50 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
+                            <span class="font-medium text-gray-200">Verdure</span>
+                            <span class="font-bold text-pizzaYellow font-serif">8,50 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
+                            <span class="font-medium text-gray-200">Diavola</span>
+                            <span class="font-bold text-pizzaYellow font-serif">7,50 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
+                            <span class="font-medium text-gray-200">Napoli</span>
+                            <span class="font-bold text-pizzaYellow font-serif">6,00 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
+                            <span class="font-medium text-gray-200">Marinara</span>
+                            <span class="font-bold text-pizzaYellow font-serif">6,00 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline pb-1">
+                            <span class="font-medium text-gray-200">Calzone</span>
+                            <span class="font-bold text-pizzaYellow font-serif">8,50 €</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- FRITTI -->
+                <div class="menu-card bg-stone-900/90 border border-stone-800 rounded-2xl p-6 shadow-xl" data-category="fritti">
+                    <div class="flex items-center space-x-3 mb-6 border-b border-stone-800 pb-4">
+                        <div class="bg-amber-600 text-white p-2.5 rounded-xl font-bold">
+                            <i class="fa-solid fa-bowl-food"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-serif font-bold text-xl text-amber-500">Fritti Tradizionali</h3>
+                            <p class="text-xs text-gray-400">Supplì, baccalà e fritti romani</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
+                            <span class="font-medium text-gray-200">Supplì al telefono</span>
+                            <span class="font-bold text-pizzaYellow font-serif">1,30 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
+                            <span class="font-medium text-gray-200">Filetto di Baccalà</span>
+                            <span class="font-bold text-pizzaYellow font-serif">4,00 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
+                            <span class="font-medium text-gray-200">Fiori di Zucca (Ripieni)</span>
+                            <span class="font-bold text-pizzaYellow font-serif">2,50 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
+                            <span class="font-medium text-gray-200">Olive Ascolane (8 pz)</span>
+                            <span class="font-bold text-pizzaYellow font-serif">4,00 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
+                            <span class="font-medium text-gray-200">Crocchette (2 pz)</span>
+                            <span class="font-bold text-pizzaYellow font-serif">1,00 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline pb-1">
+                            <span class="font-medium text-gray-200">Patate Frritte</span>
+                            <span class="font-bold text-pizzaYellow font-serif">4,00 €</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- CROSTINI SPECIALI -->
+                <div class="menu-card bg-stone-900/90 border border-stone-800 rounded-2xl p-6 shadow-xl" data-category="pizze">
+                    <div class="flex items-center space-x-3 mb-6 border-b border-stone-800 pb-4">
+                        <div class="bg-pizzaYellow text-pizzaDark p-2.5 rounded-xl font-bold">
+                            <i class="fa-solid fa-bread-slice"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-serif font-bold text-xl text-pizzaYellow">Crostini*</h3>
+                            <p class="text-xs text-gray-400">Base croccante al forno</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
+                            <span class="font-medium text-gray-200">Alici</span>
+                            <span class="font-bold text-pizzaYellow font-serif">8,50 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
+                            <span class="font-medium text-gray-200">Prosciutto</span>
+                            <span class="font-bold text-pizzaYellow font-serif">7,50 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
+                            <span class="font-medium text-gray-200">Capriccioso</span>
+                            <span class="font-bold text-pizzaYellow font-serif">8,00 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline pb-1">
+                            <span class="font-medium text-gray-200">Salmone</span>
+                            <span class="font-bold text-pizzaYellow font-serif">8,50 €</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- CONTORNI & DOLCI -->
+                <div class="menu-card bg-stone-900/90 border border-stone-800 rounded-2xl p-6 shadow-xl" data-category="contorni">
+                    <div class="flex items-center space-x-3 mb-6 border-b border-stone-800 pb-4">
+                        <div class="bg-emerald-600 text-white p-2.5 rounded-xl font-bold">
+                            <i class="fa-solid fa-carrot"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-serif font-bold text-xl text-emerald-400">Contorni & Dolci</h3>
+                            <p class="text-xs text-gray-400">Verdure fresche e dessert</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
+                            <span class="font-medium text-gray-200">Melanzana Parmigiana</span>
+                            <span class="font-bold text-pizzaYellow font-serif">8,00 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
+                            <span class="font-medium text-gray-200">Verdure Cotte (broccoli, cicoria)</span>
+                            <span class="font-bold text-pizzaYellow font-serif">6,00 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
+                            <span class="font-medium text-gray-200">Puntarelle</span>
+                            <span class="font-bold text-pizzaYellow font-serif">5,00 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline pb-1">
+                            <span class="font-medium text-gray-200">Dolci (richiedi disponibilità)</span>
+                            <span class="font-bold text-pizzaYellow font-serif">4,50 €</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- BEVANDE -->
+                <div class="menu-card bg-stone-900/90 border border-stone-800 rounded-2xl p-6 shadow-xl" data-category="bevande">
+                    <div class="flex items-center space-x-3 mb-6 border-b border-stone-800 pb-4">
+                        <div class="bg-sky-600 text-white p-2.5 rounded-xl font-bold">
+                            <i class="fa-solid fa-beer-mug-empty"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-serif font-bold text-xl text-sky-400">Bevande & Birre</h3>
+                            <p class="text-xs text-gray-400">Bibite e selezioni di birre</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3.5 max-h-[420px] overflow-y-auto pr-2">
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
+                            <span class="font-medium text-gray-200">Acqua</span>
+                            <span class="font-bold text-pizzaYellow font-serif">2,00 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
+                            <span class="font-medium text-gray-200">Coca Cola</span>
+                            <span class="font-bold text-pizzaYellow font-serif">3,00 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
+                            <span class="font-medium text-gray-200">Gassosa</span>
+                            <span class="font-bold text-pizzaYellow font-serif">2,00 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
+                            <span class="font-medium text-gray-200">Chinotto Neri</span>
+                            <span class="font-bold text-pizzaYellow font-serif">2,50 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
+                            <span class="font-medium text-gray-200">Aranciata</span>
+                            <span class="font-bold text-pizzaYellow font-serif">3,00 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
+                            <span class="font-medium text-gray-200">Birra Moretti 66cl</span>
+                            <span class="font-bold text-pizzaYellow font-serif">4,50 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
+                            <span class="font-medium text-gray-200">Birra Manabrea 33cl</span>
+                            <span class="font-bold text-pizzaYellow font-serif">3,00 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
+                            <span class="font-medium text-gray-200">Birra Manabrea 66cl</span>
+                            <span class="font-bold text-pizzaYellow font-serif">4,50 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2">
+                            <span class="font-medium text-gray-200">Birra Ichnusa 50cl</span>
+                            <span class="font-bold text-pizzaYellow font-serif">4,50 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline pb-1">
+                            <span class="font-medium text-gray-200">Birra Peroni Rossa</span>
+                            <span class="font-bold text-pizzaYellow font-serif">4,50 €</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            
+            <div class="mt-12 text-center text-sm text-gray-400 bg-stone-900 p-6 rounded-2xl border border-stone-800 max-w-3xl mx-auto space-y-2 shadow-lg">
+                <p><i class="fa-solid fa-circle-info text-pizzaYellow mr-2"></i> * Ad ogni ingrediente aggiunto +1,00 €</p>
+                <p><i class="fa-solid fa-motorcycle text-pizzaYellow mr-2"></i> <strong>Zone in cui effettuiamo consegne:</strong> Testaccio, San Saba, Aventino, Trastevere, Marconi, Garbatella, Ostiense, Monteverde, Portuense, Magliana, Montagnola, EUR.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS SECTION -->
+    <section id="recensioni" class="py-20 px-4 max-w-5xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <span class="text-pizzaRed font-bold uppercase tracking-widest text-sm bg-red-100 px-4 py-1.5 rounded-full inline-block">Dicono di Noi</span>
+            <h2 class="font-serif font-black text-4xl sm:text-5xl text-pizzaDark">Recensioni Verificate</h2>
+            <p class="text-gray-600 text-lg">Cosa dicono i clienti della vera esperienza da Remo a Testaccio.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Review 1 -->
+            <div class="bg-white p-8 rounded-3xl shadow-xl border border-orange-100 flex flex-col justify-between relative overflow-hidden group hover:shadow-2xl transition">
+                <div class="absolute top-0 right-0 bg-red-50 text-pizzaRed px-4 py-2 rounded-bl-2xl font-bold text-xs uppercase tracking-wider">
+                    tramite piatti.menu
+                </div>
+                <div class="space-y-4">
+                    <div class="text-pizzaYellow flex space-x-1 text-lg">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 italic text-lg leading-relaxed">
+                        "La miglior pizza bassa tonda di Roma. Servizio veloce. Prezzi giusti personale simpatico e disponibile. Le persone in fila dimostrano la bontà del prodotto.. Provate la pizza con i funghi porcini, 10 e lode."
+                    </p>
+                </div>
+                <div class="pt-6 mt-6 border-t border-gray-100 flex items-center space-x-3">
+                    <div class="bg-pizzaRed text-white font-bold w-10 h-10 rounded-full flex items-center justify-center font-serif shadow">
+                        PM
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-pizzaDark">Cliente Verificato</h4>
+                        <p class="text-xs text-gray-500">Recensione da piatti.menu</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="bg-white p-8 rounded-3xl shadow-xl border border-orange-100 flex flex-col justify-between relative overflow-hidden group hover:shadow-2xl transition">
+                <div class="absolute top-0 right-0 bg-emerald-50 text-emerald-700 px-4 py-2 rounded-bl-2xl font-bold text-xs uppercase tracking-wider">
+                    tramite tripadvisor
+                </div>
+                <div class="space-y-4">
+                    <div class="text-pizzaYellow flex space-x-1 text-lg">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 italic text-lg leading-relaxed">
+                        "Ottima esperienza! Una lezione di efficienza italiana e ottimo cibo! Fiori di zucca ripieni e pizza bianca... ti senti come in un'autentica trattoria del posto. Se soggiorni a Testaccio è una visita obbligatoria!"
+                    </p>
+                </div>
+                <div class="pt-6 mt-6 border-t border-gray-100 flex items-center space-x-3">
+                    <div class="bg-emerald-600 text-white font-bold w-10 h-10 rounded-full flex items-center justify-center font-serif shadow">
+                        TA
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-pizzaDark">Viaggiatore TripAdvisor</h4>
+                        <p class="text-xs text-gray-500">Recensione TripAdvisor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTS, HOURS & MAP SECTION -->
+    <section id="contatti" class="py-20 bg-stone-100 border-t border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-pizzaRed font-bold uppercase tracking-widest text-sm bg-red-100 px-4 py-1.5 rounded-full inline-block">Vieni a Trovarci</span>
+                <h2 class="font-serif font-black text-4xl sm:text-5xl text-pizzaDark">Contatti & Orari</h2>
+                <p class="text-gray-600 text-lg">Siamo nel cuore di Testaccio pronti ad accogliervi ogni sera.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Info Card -->
+                <div class="bg-white p-8 rounded-3xl shadow-xl border border-orange-100 space-y-8 lg:col-span-1">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-pizzaRed text-white p-3.5 rounded-2xl text-xl shadow-md">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-serif font-bold text-lg text-pizzaDark">Indirizzo</h4>
+                            <p class="text-gray-600">Piazza S. Maria Liberatrice 44<br><span class="text-sm text-gray-500">00153 Testaccio, Roma (RM)</span></p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-pizzaYellow text-pizzaDark p-3.5 rounded-2xl text-xl shadow-md">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-serif font-bold text-lg text-pizzaDark">Telefono</h4>
+                            <a href="tel:065746270" class="text-pizzaRed font-bold text-lg hover:underline">06.57.46.270</a>
+                            <p class="text-xs text-gray-500">Prenotazioni e asporto</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-stone-900 text-white p-3.5 rounded-2xl text-xl shadow-md">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-serif font-bold text-lg text-pizzaDark">Orari di Apertura</h4>
+                            <ul class="text-sm text-gray-600 space-y-1.5 mt-1">
+                                <li class="flex justify-between"><span class="font-medium text-gray-800">Lunedì - Sabato:</span> <span class="text-pizzaRed font-semibold">19:00 - 01:00</span></li>
+                                <li class="flex justify-between"><span class="font-medium text-gray-800">Domenica:</span> <span class="text-red-600 font-semibold">Chiuso</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-amber-50 border border-amber-200 p-4 rounded-2xl text-xs text-amber-900 space-y-1 shadow-sm">
+                        <p class="font-bold"><i class="fa-solid fa-triangle-exclamation mr-1"></i> Asporto & Consegne:</p>
+                        <p>• Ritiro d'asporto disponibile fino alle 22:00.</p>
+                        <p>• Consegne fuori Testaccio: ordine minimo 25€.</p>
+                    </div>
+                </div>
+
+                <!-- Minimap Embed -->
+                <div class="bg-white p-4 rounded-3xl shadow-xl border border-orange-100 lg:col-span-2 overflow-hidden flex flex-col">
+                    <div class="w-full h-full min-h-[400px] rounded-2xl overflow-hidden relative shadow-inner">
+                        <iframe 
+                            src="https://maps.google.com/maps?q=Piazza+Santa+Maria+Liberatrice+44+Roma+Testaccio&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            class="w-full h-full rounded-2xl">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-pizzaDark text-gray-400 py-12 border-t border-stone-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+            <div class="flex items-center space-x-3">
+                <span class="bg-pizzaRed text-white p-2 rounded-xl font-serif font-black text-lg">R</span>
+                <div>
+                    <span class="font-serif font-bold text-white text-lg">PIZZERIA REMO</span>
+                    <p class="text-xs">Piazza S. Maria Liberatrice 44, Testaccio (Roma)</p>
+                </div>
+            </div>
+            <div class="text-sm text-center md:text-right">
+                <p>&copy; 2026 Pizzeria Remo a Testaccio. Tutti i diritti riservati.</p>
+                <p class="text-xs text-gray-500 mt-1">Sito storico non ufficiale realizzato con passione per i veri amanti della pizza romana.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Menu Filtering & Mobile Menu Toggle -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
         });
-    }
-</script>
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Menu filter function
+        function filterMenu(category) {
+            const cards = document.querySelectorAll('.menu-card');
+            const tabs = document.querySelectorAll('.menu-tab');
+
+            // Update active tab styling
+            tabs.forEach(tab => {
+                tab.classList.remove('bg-pizzaRed', 'text-white', 'shadow-md');
+                tab.classList.add('bg-stone-800', 'text-gray-300');
+            });
+            event.target.classList.remove('bg-stone-800', 'text-gray-300');
+            event.target.classList.add('bg-pizzaRed', 'text-white', 'shadow-md');
+
+            // Show/Hide cards with smooth transition
+            cards.forEach(card => {
+                if (category === 'all') {
+                    card.style.display = 'block';
+                } else {
+                    const cardCategory = card.getAttribute('data-category');
+                    if (cardCategory === category) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>
