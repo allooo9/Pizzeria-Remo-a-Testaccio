@@ -216,16 +216,23 @@
                 <p class="text-gray-400 text-lg" data-i18n="menu_subtitle">Tutti i sapori della tradizione romana preparati con ingredienti genuini.</p>
             </div>
 
-            <!-- Menu Category Navigation Tabs -->
-            <div class="flex flex-wrap justify-center gap-2 mb-12">
-                <button onclick="filterMenu('all')" class="menu-tab active-tab bg-pizzaRed text-white px-6 py-2.5 rounded-full font-bold text-sm shadow-md transition" data-i18n="tab_all">Tutti</button>
-                <button onclick="filterMenu('pizze')" class="menu-tab bg-stone-800 hover:bg-stone-700 text-gray-300 px-6 py-2.5 rounded-full font-bold text-sm transition" data-i18n="tab_pizzas">Pizze & Crostini</button>
-                <button onclick="filterMenu('fritti')" class="menu-tab bg-stone-800 hover:bg-stone-700 text-gray-300 px-6 py-2.5 rounded-full font-bold text-sm transition" data-i18n="tab_fried">Crostini & Fritti</button>
-                <button onclick="filterMenu('contorni')" class="menu-tab bg-stone-800 hover:bg-stone-700 text-gray-300 px-6 py-2.5 rounded-full font-bold text-sm transition" data-i18n="tab_sides">Contorni & Dolci</button>
-                <button onclick="filterMenu('bevande')" class="menu-tab bg-stone-800 hover:bg-stone-700 text-gray-300 px-6 py-2.5 rounded-full font-bold text-sm transition" data-i18n="tab_drinks">Bevande</button>
+            <!-- Menu Category Navigation Tabs: Row 1 for "Tutti", Row 2 for other categories -->
+            <div class="flex flex-col items-center gap-3 mb-12">
+                <!-- Row 1: Tutti / All -->
+                <div>
+                    <button onclick="filterMenu('all')" class="menu-tab active-tab bg-pizzaRed text-white px-8 py-2.5 rounded-full font-bold text-sm shadow-md transition" data-i18n="tab_all">Tutti</button>
+                </div>
+                <!-- Row 2: Specific Categories -->
+                <div class="flex flex-wrap justify-center gap-2">
+                    <button onclick="filterMenu('pizze')" class="menu-tab bg-stone-800 hover:bg-stone-700 text-gray-300 px-6 py-2.5 rounded-full font-bold text-sm transition" data-i18n="tab_pizzas">Pizze & Crostini</button>
+                    <button onclick="filterMenu('fritti')" class="menu-tab bg-stone-800 hover:bg-stone-700 text-gray-300 px-6 py-2.5 rounded-full font-bold text-sm transition" data-i18n="tab_fried">Fritti</button>
+                    <button onclick="filterMenu('contorni')" class="menu-tab bg-stone-800 hover:bg-stone-700 text-gray-300 px-6 py-2.5 rounded-full font-bold text-sm transition" data-i18n="tab_sides">Contorni</button>
+                    <button onclick="filterMenu('dolci')" class="menu-tab bg-stone-800 hover:bg-stone-700 text-gray-300 px-6 py-2.5 rounded-full font-bold text-sm transition" data-i18n="tab_desserts">Dolci</button>
+                    <button onclick="filterMenu('bevande')" class="menu-tab bg-stone-800 hover:bg-stone-700 text-gray-300 px-6 py-2.5 rounded-full font-bold text-sm transition" data-i18n="tab_drinks">Bevande</button>
+                </div>
             </div>
 
-            <!-- Menu Grid Container (Ordered: Pizze Bianche, Pizze Rosse, Crostini, Fritti, Bevande, Contorni, Dolci) -->
+            <!-- Menu Grid Container -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
 
                 <!-- PIZZE BIANCHE -->
@@ -350,8 +357,8 @@
                     </ul>
                 </div>
 
-                <!-- CROSTINI (Placed before Fritti) -->
-                <div class="menu-card bg-stone-900/90 border border-stone-800 rounded-2xl p-6 shadow-xl" data-category="fritti">
+                <!-- CROSTINI (Grouped under Pizze & Crostini category) -->
+                <div class="menu-card bg-stone-900/90 border border-stone-800 rounded-2xl p-6 shadow-xl" data-category="pizze">
                     <div class="flex items-center space-x-3 mb-6 border-b border-stone-800 pb-4">
                         <div class="bg-pizzaYellow text-pizzaDark p-2.5 rounded-xl font-bold">
                             <i class="fa-solid fa-bread-slice"></i>
@@ -420,6 +427,52 @@
                     </ul>
                 </div>
 
+                <!-- CONTORNI -->
+                <div class="menu-card bg-stone-900/90 border border-stone-800 rounded-2xl p-6 shadow-xl" data-category="contorni">
+                    <div class="flex items-center space-x-3 mb-6 border-b border-stone-800 pb-4">
+                        <div class="bg-emerald-600 text-white p-2.5 rounded-xl font-bold">
+                            <i class="fa-solid fa-carrot"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-serif font-bold text-xl text-emerald-400" data-i18n="cat_sides">Contorni</h3>
+                            <p class="text-xs text-gray-400" data-i18n="cat_sides_sub">Verdure fresche di stagione</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
+                            <span class="font-medium text-gray-200">Melanzana Parmigiana</span>
+                            <span class="font-bold text-pizzaYellow font-serif">8,00 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
+                            <span class="font-medium text-gray-200">Verdure Cotte <span class="text-xs text-gray-400 font-normal" data-i18n="veg_details">(broccoli, cicoria, broccoletti)</span></span>
+                            <span class="font-bold text-pizzaYellow font-serif">6,00 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline pb-1">
+                            <span class="font-medium text-gray-200">Puntarelle</span>
+                            <span class="font-bold text-pizzaYellow font-serif">5,00 €</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- DOLCI -->
+                <div class="menu-card bg-stone-900/90 border border-stone-800 rounded-2xl p-6 shadow-xl" data-category="dolci">
+                    <div class="flex items-center space-x-3 mb-6 border-b border-stone-800 pb-4">
+                        <div class="bg-rose-600 text-white p-2.5 rounded-xl font-bold">
+                            <i class="fa-solid fa-cake-candles"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-serif font-bold text-xl text-rose-400" data-i18n="cat_desserts">Dolci</h3>
+                            <p class="text-xs text-gray-400" data-i18n="cat_desserts_sub">Fine pasto artigianale</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex justify-between items-baseline pb-1">
+                            <span class="font-medium text-gray-200" data-i18n="dessert_item">Dolci (da richiedere disponibilità del giorno)</span>
+                            <span class="font-bold text-pizzaYellow font-serif whitespace-nowrap">4,50€</span>
+                        </li>
+                    </ul>
+                </div>
+
                 <!-- BEVANDE -->
                 <div class="menu-card bg-stone-900/90 border border-stone-800 rounded-2xl p-6 shadow-xl" data-category="bevande">
                     <div class="flex items-center space-x-3 mb-6 border-b border-stone-800 pb-4">
@@ -471,52 +524,6 @@
                         <li class="flex justify-between items-baseline pb-1">
                             <span class="font-medium text-gray-200">Birra Peroni Rossa (gran riserva)</span>
                             <span class="font-bold text-pizzaYellow font-serif">4,50 €</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- CONTORNI (Separated) -->
-                <div class="menu-card bg-stone-900/90 border border-stone-800 rounded-2xl p-6 shadow-xl" data-category="contorni">
-                    <div class="flex items-center space-x-3 mb-6 border-b border-stone-800 pb-4">
-                        <div class="bg-emerald-600 text-white p-2.5 rounded-xl font-bold">
-                            <i class="fa-solid fa-carrot"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-serif font-bold text-xl text-emerald-400" data-i18n="cat_sides">Contorni</h3>
-                            <p class="text-xs text-gray-400" data-i18n="cat_sides_sub">Verdure fresche di stagione</p>
-                        </div>
-                    </div>
-                    <ul class="space-y-4">
-                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
-                            <span class="font-medium text-gray-200">Melanzana Parmigiana</span>
-                            <span class="font-bold text-pizzaYellow font-serif">8,00 €</span>
-                        </li>
-                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
-                            <span class="font-medium text-gray-200">Verdure Cotte <span class="text-xs text-gray-400 font-normal" data-i18n="veg_details">(broccoli, cicoria, broccoletti)</span></span>
-                            <span class="font-bold text-pizzaYellow font-serif">6,00 €</span>
-                        </li>
-                        <li class="flex justify-between items-baseline pb-1">
-                            <span class="font-medium text-gray-200">Puntarelle</span>
-                            <span class="font-bold text-pizzaYellow font-serif">5,00 €</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- DOLCI (Separated & with 4,50€ fixed on one line) -->
-                <div class="menu-card bg-stone-900/90 border border-stone-800 rounded-2xl p-6 shadow-xl" data-category="contorni">
-                    <div class="flex items-center space-x-3 mb-6 border-b border-stone-800 pb-4">
-                        <div class="bg-rose-600 text-white p-2.5 rounded-xl font-bold">
-                            <i class="fa-solid fa-cake-candles"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-serif font-bold text-xl text-rose-400" data-i18n="cat_desserts">Dolci</h3>
-                            <p class="text-xs text-gray-400" data-i18n="cat_desserts_sub">Fine pasto artigianale</p>
-                        </div>
-                    </div>
-                    <ul class="space-y-4">
-                        <li class="flex justify-between items-baseline pb-1">
-                            <span class="font-medium text-gray-200" data-i18n="dessert_item">Dolci (da richiedere disponibilità del giorno)</span>
-                            <span class="font-bold text-pizzaYellow font-serif whitespace-nowrap">4,50€</span>
                         </li>
                     </ul>
                 </div>
@@ -699,8 +706,9 @@
                 menu_subtitle: "Tutti i sapori della tradizione romana preparati con ingredienti genuini.",
                 tab_all: "Tutti",
                 tab_pizzas: "Pizze & Crostini",
-                tab_fried: "Crostini & Fritti",
-                tab_sides: "Contorni & Dolci",
+                tab_fried: "Fritti",
+                tab_sides: "Contorni",
+                tab_desserts: "Dolci",
                 tab_drinks: "Bevande",
                 cat_white_pizzas: "Pizze Bianche*",
                 cat_white_pizzas_sub: "Classiche della tradizione romana",
@@ -766,8 +774,9 @@
                 menu_subtitle: "All the flavors of Roman tradition prepared with genuine ingredients.",
                 tab_all: "All",
                 tab_pizzas: "Pizzas & Crostini",
-                tab_fried: "Crostini & Fried",
-                tab_sides: "Sides & Desserts",
+                tab_fried: "Fried",
+                tab_sides: "Sides",
+                tab_desserts: "Desserts",
                 tab_drinks: "Drinks",
                 cat_white_pizzas: "White Pizzas*",
                 cat_white_pizzas_sub: "Roman tradition classics",
