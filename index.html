@@ -200,7 +200,7 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <p class="font-serif italic text-sm text-gray-200" data-i18n="intro_quote">"Se potessi mangiare una sola cosa da Roma in questo momento sarebbe la pizza di Remo."</p>
+                        <p class="font-serif italic text-sm text-gray-200" data-i18n="photo_review_quote">"Se potessi mangiare una sola cosa da Roma in questo momento sarebbe la pizza di Remo."</p>
                     </div>
                 </div>
             </div>
@@ -225,7 +225,7 @@
                 <button onclick="filterMenu('bevande')" class="menu-tab bg-stone-800 hover:bg-stone-700 text-gray-300 px-6 py-2.5 rounded-full font-bold text-sm transition" data-i18n="tab_drinks">Bevande</button>
             </div>
 
-            <!-- Menu Grid Container -->
+            <!-- Menu Grid Container (Ordered: Pizze Bianche, Pizze Rosse, Crostini, Fritti, Bevande, Contorni, Dolci) -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
 
                 <!-- PIZZE BIANCHE -->
@@ -350,7 +350,7 @@
                     </ul>
                 </div>
 
-                <!-- CROSTINI SPECIALI (Placed before Fritti) -->
+                <!-- CROSTINI (Placed before Fritti) -->
                 <div class="menu-card bg-stone-900/90 border border-stone-800 rounded-2xl p-6 shadow-xl" data-category="fritti">
                     <div class="flex items-center space-x-3 mb-6 border-b border-stone-800 pb-4">
                         <div class="bg-pizzaYellow text-pizzaDark p-2.5 rounded-xl font-bold">
@@ -420,52 +420,6 @@
                     </ul>
                 </div>
 
-                <!-- CONTORNI (Separated) -->
-                <div class="menu-card bg-stone-900/90 border border-stone-800 rounded-2xl p-6 shadow-xl" data-category="contorni">
-                    <div class="flex items-center space-x-3 mb-6 border-b border-stone-800 pb-4">
-                        <div class="bg-emerald-600 text-white p-2.5 rounded-xl font-bold">
-                            <i class="fa-solid fa-carrot"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-serif font-bold text-xl text-emerald-400" data-i18n="cat_sides">Contorni</h3>
-                            <p class="text-xs text-gray-400" data-i18n="cat_sides_sub">Verdure fresche di stagione</p>
-                        </div>
-                    </div>
-                    <ul class="space-y-4">
-                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
-                            <span class="font-medium text-gray-200">Melanzana Parmigiana</span>
-                            <span class="font-bold text-pizzaYellow font-serif">8,00 €</span>
-                        </li>
-                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
-                            <span class="font-medium text-gray-200">Verdure Cotte <span class="text-xs text-gray-400 font-normal" data-i18n="veg_details">(broccoli, cicoria, broccoletti)</span></span>
-                            <span class="font-bold text-pizzaYellow font-serif">6,00 €</span>
-                        </li>
-                        <li class="flex justify-between items-baseline pb-1">
-                            <span class="font-medium text-gray-200">Puntarelle</span>
-                            <span class="font-bold text-pizzaYellow font-serif">5,00 €</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- DOLCI (Separated & with 4,50€ fixed on one line) -->
-                <div class="menu-card bg-stone-900/90 border border-stone-800 rounded-2xl p-6 shadow-xl" data-category="contorni">
-                    <div class="flex items-center space-x-3 mb-6 border-b border-stone-800 pb-4">
-                        <div class="bg-rose-600 text-white p-2.5 rounded-xl font-bold">
-                            <i class="fa-solid fa-cake-candles"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-serif font-bold text-xl text-rose-400" data-i18n="cat_desserts">Dolci</h3>
-                            <p class="text-xs text-gray-400" data-i18n="cat_desserts_sub">Fine pasto artigianale</p>
-                        </div>
-                    </div>
-                    <ul class="space-y-4">
-                        <li class="flex justify-between items-baseline pb-1">
-                            <span class="font-medium text-gray-200" data-i18n="dessert_item">Dolci (da richiedere disponibilità del giorno)</span>
-                            <span class="font-bold text-pizzaYellow font-serif whitespace-nowrap">4,50€</span>
-                        </li>
-                    </ul>
-                </div>
-
                 <!-- BEVANDE -->
                 <div class="menu-card bg-stone-900/90 border border-stone-800 rounded-2xl p-6 shadow-xl" data-category="bevande">
                     <div class="flex items-center space-x-3 mb-6 border-b border-stone-800 pb-4">
@@ -521,6 +475,52 @@
                     </ul>
                 </div>
 
+                <!-- CONTORNI (Separated) -->
+                <div class="menu-card bg-stone-900/90 border border-stone-800 rounded-2xl p-6 shadow-xl" data-category="contorni">
+                    <div class="flex items-center space-x-3 mb-6 border-b border-stone-800 pb-4">
+                        <div class="bg-emerald-600 text-white p-2.5 rounded-xl font-bold">
+                            <i class="fa-solid fa-carrot"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-serif font-bold text-xl text-emerald-400" data-i18n="cat_sides">Contorni</h3>
+                            <p class="text-xs text-gray-400" data-i18n="cat_sides_sub">Verdure fresche di stagione</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
+                            <span class="font-medium text-gray-200">Melanzana Parmigiana</span>
+                            <span class="font-bold text-pizzaYellow font-serif">8,00 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-stone-800/60 pb-2.5">
+                            <span class="font-medium text-gray-200">Verdure Cotte <span class="text-xs text-gray-400 font-normal" data-i18n="veg_details">(broccoli, cicoria, broccoletti)</span></span>
+                            <span class="font-bold text-pizzaYellow font-serif">6,00 €</span>
+                        </li>
+                        <li class="flex justify-between items-baseline pb-1">
+                            <span class="font-medium text-gray-200">Puntarelle</span>
+                            <span class="font-bold text-pizzaYellow font-serif">5,00 €</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- DOLCI (Separated & with 4,50€ fixed on one line) -->
+                <div class="menu-card bg-stone-900/90 border border-stone-800 rounded-2xl p-6 shadow-xl" data-category="contorni">
+                    <div class="flex items-center space-x-3 mb-6 border-b border-stone-800 pb-4">
+                        <div class="bg-rose-600 text-white p-2.5 rounded-xl font-bold">
+                            <i class="fa-solid fa-cake-candles"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-serif font-bold text-xl text-rose-400" data-i18n="cat_desserts">Dolci</h3>
+                            <p class="text-xs text-gray-400" data-i18n="cat_desserts_sub">Fine pasto artigianale</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex justify-between items-baseline pb-1">
+                            <span class="font-medium text-gray-200" data-i18n="dessert_item">Dolci (da richiedere disponibilità del giorno)</span>
+                            <span class="font-bold text-pizzaYellow font-serif whitespace-nowrap">4,50€</span>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
             
             <!-- Delivery Info Box with minimum order note at the bottom -->
@@ -541,7 +541,7 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- Review 1 -->
+            <!-- Review 1 (Original Restored) -->
             <div class="bg-white p-8 rounded-3xl shadow-xl border border-orange-100 flex flex-col justify-between relative overflow-hidden group hover:shadow-2xl transition">
                 <div class="absolute top-0 right-0 bg-red-50 text-pizzaRed px-4 py-2 rounded-bl-2xl font-bold text-xs uppercase tracking-wider">
                     piatti.menu
@@ -555,7 +555,7 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                     <p class="text-gray-700 italic text-lg leading-relaxed" data-i18n="review_1_text">
-                        "Se potessi mangiare una sola cosa da Roma in questo momento sarebbe la pizza di Remo."
+                        "La miglior pizza bassa tonda di Roma. Servizio veloce. Prezzi giusti personale simpatico e disponibile. Le persone in fila dimostrano la bontà del prodotto.. Provate la pizza con i funghi porcini, 10 e lode."
                     </p>
                 </div>
                 <div class="pt-6 mt-6 border-t border-gray-100 flex items-center justify-between">
@@ -563,7 +563,7 @@
                 </div>
             </div>
 
-            <!-- Review 2 -->
+            <!-- Review 2 (Original Restored) -->
             <div class="bg-white p-8 rounded-3xl shadow-xl border border-orange-100 flex flex-col justify-between relative overflow-hidden group hover:shadow-2xl transition">
                 <div class="absolute top-0 right-0 bg-emerald-50 text-emerald-700 px-4 py-2 rounded-bl-2xl font-bold text-xs uppercase tracking-wider">
                     tripadvisor
@@ -627,7 +627,7 @@
                         <div>
                             <h4 class="font-serif font-bold text-lg text-pizzaDark" data-i18n="hours_title">Orari di Apertura</h4>
                             <ul class="text-sm text-gray-600 space-y-1.5 mt-1">
-                                <li class="flex justify-between"><span class="font-medium text-gray-800" data-i18n="hours_days">Lunedì - Sabato:</span> <span class="text-pizzaRed font-semibold"> 19:00 - 01:00</span></li>
+                                <li class="flex justify-between"><span class="font-medium text-gray-800" data-i18n="hours_days">Lunedì - Sabato :</span> <span class="text-pizzaRed font-semibold"> 19:00 - 01:00</span></li>
                                 <li class="flex justify-between"><span class="font-medium text-gray-800" data-i18n="hours_sun">Domenica:</span> <span class="text-red-600 font-semibold" data-i18n="closed">Chiuso</span></li>
                             </ul>
                         </div>
@@ -693,7 +693,7 @@
                 feature_1_desc: "Stile romano doc",
                 feature_2_title: "Forno a Legna",
                 feature_2_desc: "Cottura tradizionale",
-                intro_quote: "\"Se potessi mangiare una sola cosa da Roma in questo momento sarebbe la pizza di Remo.\"",
+                photo_review_quote: "\"Se potessi mangiare una sola cosa da Roma in questo momento sarebbe la pizza di Remo.\"",
                 menu_badge: "Il Nostro Listino",
                 menu_title: "Il Menu Ufficiale",
                 menu_subtitle: "Tutti i sapori della tradizione romana preparati con ingredienti genuini.",
@@ -725,7 +725,7 @@
                 reviews_badge: "Dicono di Noi",
                 reviews_title: "Recensioni Verificate",
                 reviews_subtitle: "Cosa dicono i clienti della vera esperienza da Remo a Testaccio.",
-                review_1_text: "\"Se potessi mangiare una sola cosa da Roma in questo momento sarebbe la pizza di Remo.\"",
+                review_1_text: "\"La miglior pizza bassa tonda di Roma. Servizio veloce. Prezzi giusti personale simpatico e disponibile. Le persone in fila dimostrano la bontà del prodotto.. Provate la pizza con i funghi porcini, 10 e lode.\"",
                 review_2_text: "\"Ottima esperienza! Una lezione di efficienza italiana e ottimo cibo! Fiori di zucca ripieni e pizza bianca... ti senti come in un'autentica trattoria del posto. Se soggiorni a Testaccio è una visita obbligatoria!\"",
                 contact_badge: "Vieni a Trovarci",
                 contact_title: "Contatti & Orari",
@@ -734,7 +734,7 @@
                 phone_title: "Telefono",
                 phone_sub: "Prenotazioni e asporto",
                 hours_title: "Orari di Apertura",
-                hours_days: "Lunedì - Sabato:",
+                hours_days: "Lunedì - Sabato :",
                 hours_sun: "Domenica:",
                 closed: "Chiuso",
                 rights: "Tutti i diritti riservati."
@@ -760,7 +760,7 @@
                 feature_1_desc: "Classic Roman style",
                 feature_2_title: "Wood Oven",
                 feature_2_desc: "Traditional baking",
-                intro_quote: "\"If I could eat only one thing from Rome right now, it would be Remo's pizza.\"",
+                photo_review_quote: "\"If I could eat only one thing from Rome right now, it would be Remo's pizza.\"",
                 menu_badge: "Our Pricelist",
                 menu_title: "The Official Menu",
                 menu_subtitle: "All the flavors of Roman tradition prepared with genuine ingredients.",
@@ -792,7 +792,7 @@
                 reviews_badge: "Testimonials",
                 reviews_title: "Verified Reviews",
                 reviews_subtitle: "What customers say about the true Remo experience in Testaccio.",
-                review_1_text: "\"If I could eat only one thing from Rome right now, it would be Remo's pizza.\"",
+                review_1_text: "\"The best thin round pizza in Rome. Fast service. Fair prices, friendly and helpful staff. The people in line prove the goodness of the product... Try the pizza with porcini mushrooms, 10/10.\"",
                 review_2_text: "\"Great experience! A lesson in Italian efficiency and great food! Stuffed pumpkin flowers and white pizza... you feel like you're in an authentic local trattoria. If you stay in Testaccio it's a mandatory visit!\"",
                 contact_badge: "Visit Us",
                 contact_title: "Contacts & Hours",
@@ -801,7 +801,7 @@
                 phone_title: "Phone",
                 phone_sub: "Reservations & Takeaway",
                 hours_title: "Opening Hours",
-                hours_days: "Monday - Saturday:",
+                hours_days: "Monday - Saturday :",
                 hours_sun: "Sunday:",
                 closed: "Closed",
                 rights: "All rights reserved."
